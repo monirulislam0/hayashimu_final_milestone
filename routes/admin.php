@@ -13,6 +13,8 @@ Route::middleware(['auth:admin'])->group(function () {
     Route::post('/change-password',   [AdminController::class, 'changePassword'])->name('change.password');
     Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
     Route::get('contact-message',[DashboardController::class,'contactMessage'])->name('contact-message');
+    Route::get('contact-message/view/{id}',[DashboardController::class,'viewContactMessage'])->name('contact-message.view');
+    Route::post('contact-message/delete/{id}',[DashboardController::class,'deleteContactMessage'])->name('contact-message.delete');
     Route::get('/settings',[SettingController::class,'index'])->name('setting');
     Route::group(['prefix'=> 'categories'],function (){
         Route::get('/','App\Http\Controllers\CategoryController@index')->name('categories.index');

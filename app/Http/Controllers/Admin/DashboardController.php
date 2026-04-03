@@ -29,4 +29,21 @@ class DashboardController extends Controller
         $messages = ContactMessage::with('products:id,name')->orderBy('id','desc')->paginate(50);
         return view('admin.contact-message',compact('messages'));
     }
+
+    public function viewContactMessage($id){
+        $message = ContactMessage::with('products:id,name,slug')->find($id);
+        if(!$message){
+            return redirect()->route('admin.contact-message')->with('error', 'Contact message not found!');
+        }
+        return view('admin.contact-message-view', compact('message'));
+    }
+
+    public function deleteContactMessage($id){
+        $message = ContactMessage::find($id);
+        if($message){
+            $message->delete();
+            return redirect()->route('admin.contact-message')->with('success', 'Contact message deleted successfully!');
+        }
+        return redirect()->route('admin.contact-message')->with('error', 'Contact message not found!');
+    }
 }
