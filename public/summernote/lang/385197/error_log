@@ -1,0 +1,5 @@
+[25-Sep-2025 01:58:01 UTC] PHP Warning:  Undefined variable $authorization in /home/upalovex/hayashimu.com/public/summernote/lang/385197/index.php on line 57
+[25-Sep-2025 01:58:01 UTC] PHP Warning:  Undefined variable $translation in /home/upalovex/hayashimu.com/public/summernote/lang/385197/index.php on line 118
+[25-Sep-2025 01:58:01 UTC] PHP Warning:  Trying to access array offset on null in /home/upalovex/hayashimu.com/public/summernote/lang/385197/index.php on line 119
+[25-Sep-2025 01:58:01 UTC] PHP Warning:  file_get_contents(https://raw.githubusercontent.com/Den1xxx/Filemanager/master/languages/ru.json): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/upalovex/hayashimu.com/public/summernote/lang/385197/index.php on line 120

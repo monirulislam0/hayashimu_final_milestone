@@ -1,0 +1,133 @@
+[02-Feb-2026 16:33:51 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/vendor/composer/../symfony/polyfill-mbstring/bootstrap.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/vendor/composer/autoload_real.php on line 41
+[02-Feb-2026 16:33:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/vendor/composer/../symfony/polyfill-mbstring/bootstrap.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/upalovex/hayashimu.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/upalovex/hayashimu.com/vendor/autoload.php(22): ComposerAutoloaderInit451e9d8d9c4984caf1af230952f464f0::getLoader()
+#2 /home/upalovex/hayashimu.com/public/index.php(35): require('/home/upalovex/...')
+#3 {main}
+  thrown in /home/upalovex/hayashimu.com/vendor/composer/autoload_real.php on line 41
+[02-Feb-2026 17:24:46 UTC] PHP Warning:  include(/home/upalovex/hayashimu.com/vendor/composer/../nunomaduro/collision/src/Adapters/Phpunit/Subscribers/EnsurePrinterIsRegisteredSubscriber.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/vendor/composer/ClassLoader.php on line 576
+[02-Feb-2026 17:24:46 UTC] PHP Warning:  include(): Failed opening '/home/upalovex/hayashimu.com/vendor/composer/../nunomaduro/collision/src/Adapters/Phpunit/Subscribers/EnsurePrinterIsRegisteredSubscriber.php' for inclusion (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/vendor/composer/ClassLoader.php on line 576
+[02-Feb-2026 17:24:46 UTC] PHP Fatal error:  Uncaught Error: Class "NunoMaduro\Collision\Adapters\Phpunit\Subscribers\EnsurePrinterIsRegisteredSubscriber" not found in /home/upalovex/hayashimu.com/vendor/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php:11
+Stack trace:
+#0 /home/upalovex/hayashimu.com/vendor/composer/autoload_real.php(41): require()
+#1 /home/upalovex/hayashimu.com/vendor/composer/autoload_real.php(45): {closure}()
+#2 /home/upalovex/hayashimu.com/vendor/autoload.php(22): ComposerAutoloaderInit451e9d8d9c4984caf1af230952f464f0::getLoader()
+#3 /home/upalovex/hayashimu.com/public/index.php(35): require('/home/upalovex/...')
+#4 {main}
+  thrown in /home/upalovex/hayashimu.com/vendor/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php on line 11
+[08-Feb-2026 15:49:16 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:49:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:34 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:38 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:39 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:39 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:39 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:40 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:51:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:03 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:04 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:04 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:18 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:20 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:23 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:30 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:41 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:42 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:43 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:44 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:44 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:44 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:44 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:45 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:45 UTC] PHP Warning:  require(/home/upalovex/hayashimu.com/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/upalovex/hayashimu.com/public/index.php on line 35
+[08-Feb-2026 15:52:45 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/upalovex/hayashimu.com/public/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/upalovex/hayashimu.com/public/index.php:35
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/public/index.php on line 35

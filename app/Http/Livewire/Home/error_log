@@ -1,0 +1,44 @@
+[16-Jan-2026 07:41:24 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Feature.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Feature.php on line 9
+[16-Jan-2026 07:41:26 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/NewItem.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/NewItem.php on line 9
+[16-Jan-2026 08:30:45 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Feature.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Feature.php on line 9
+[16-Jan-2026 08:30:46 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/NewItem.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/NewItem.php on line 9
+[16-Jan-2026 09:13:35 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Offer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Offer.php on line 8
+[17-Jan-2026 00:45:38 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Feature.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Feature.php on line 9
+[17-Jan-2026 00:45:40 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/NewItem.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/NewItem.php on line 9
+[17-Jan-2026 00:45:42 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Offer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Offer.php on line 8
+[29-Jan-2026 10:24:01 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/NewItem.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/NewItem.php on line 9
+[29-Jan-2026 22:21:26 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Feature.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Feature.php on line 9
+[30-Jan-2026 00:14:15 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Offer.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Home/Offer.php on line 8

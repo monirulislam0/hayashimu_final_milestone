@@ -1,0 +1,380 @@
+[12-Jan-2026 07:06:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[12-Jan-2026 07:07:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[12-Jan-2026 07:09:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[12-Jan-2026 07:11:52 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[12-Jan-2026 07:14:42 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[12-Jan-2026 07:20:21 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[12-Jan-2026 08:15:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[13-Jan-2026 19:24:12 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[14-Jan-2026 01:06:45 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[14-Jan-2026 01:06:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[14-Jan-2026 01:06:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[14-Jan-2026 01:06:56 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[14-Jan-2026 01:07:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[14-Jan-2026 01:07:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[14-Jan-2026 06:37:44 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[14-Jan-2026 06:37:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[14-Jan-2026 06:37:48 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[14-Jan-2026 06:37:50 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[14-Jan-2026 06:37:52 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[14-Jan-2026 06:37:54 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[14-Jan-2026 06:37:55 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[14-Jan-2026 07:56:20 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[16-Jan-2026 03:35:13 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[16-Jan-2026 03:38:41 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[16-Jan-2026 04:41:43 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[16-Jan-2026 04:55:15 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[16-Jan-2026 05:14:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[16-Jan-2026 05:24:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[18-Jan-2026 03:16:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[18-Jan-2026 04:32:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[18-Jan-2026 04:35:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[18-Jan-2026 04:41:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[18-Jan-2026 15:33:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[18-Jan-2026 15:33:30 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[18-Jan-2026 15:33:36 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[18-Jan-2026 15:34:37 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[18-Jan-2026 15:35:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[18-Jan-2026 15:37:16 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[18-Jan-2026 15:37:42 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[18-Jan-2026 19:00:25 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[18-Jan-2026 19:19:31 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[19-Jan-2026 07:51:56 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[20-Jan-2026 20:27:05 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[20-Jan-2026 20:27:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[20-Jan-2026 20:27:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[20-Jan-2026 20:27:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[20-Jan-2026 20:27:05 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[20-Jan-2026 20:27:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[20-Jan-2026 20:27:06 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[20-Jan-2026 20:29:02 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[20-Jan-2026 20:29:02 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[20-Jan-2026 20:29:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[20-Jan-2026 20:29:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[20-Jan-2026 20:29:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[20-Jan-2026 20:29:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[20-Jan-2026 20:29:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[20-Jan-2026 20:30:16 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[20-Jan-2026 20:30:16 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[20-Jan-2026 20:30:16 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[20-Jan-2026 20:30:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[20-Jan-2026 20:30:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[20-Jan-2026 20:30:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[20-Jan-2026 20:30:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[23-Jan-2026 08:35:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[23-Jan-2026 10:36:45 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[23-Jan-2026 11:19:17 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[23-Jan-2026 14:45:03 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[23-Jan-2026 17:26:52 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[23-Jan-2026 20:41:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[23-Jan-2026 22:03:23 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[23-Jan-2026 22:03:34 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[24-Jan-2026 04:20:29 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[24-Jan-2026 04:22:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[24-Jan-2026 08:53:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[24-Jan-2026 12:41:56 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[24-Jan-2026 17:15:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[24-Jan-2026 23:13:46 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[24-Jan-2026 23:37:10 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[25-Jan-2026 01:35:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[25-Jan-2026 14:24:17 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[25-Jan-2026 15:11:59 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[25-Jan-2026 16:00:51 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[25-Jan-2026 22:13:11 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[26-Jan-2026 01:08:57 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[26-Jan-2026 21:22:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[26-Jan-2026 22:11:22 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[30-Jan-2026 06:51:01 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/CategoryRepository.php on line 20
+[30-Jan-2026 06:53:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/NewsRepository.php on line 14
+[30-Jan-2026 06:56:02 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[30-Jan-2026 06:58:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ProductRepository.php on line 13
+[30-Jan-2026 07:01:04 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/ServiceRepository.php on line 18
+[30-Jan-2026 07:21:12 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/SliderRepository.php on line 18
+[30-Jan-2026 07:38:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Repositories\BaseRepository" not found in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/StaticPageRepository.php on line 15
+[31-Jan-2026 07:25:01 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7
+[31-Jan-2026 07:25:02 UTC] PHP Fatal error:  Uncaught Error: Interface "App\Contracts\BaseContract" not found in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Repositories/BaseRepository.php on line 7

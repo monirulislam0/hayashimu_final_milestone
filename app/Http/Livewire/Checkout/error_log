@@ -1,0 +1,36 @@
+[13-Jan-2026 23:49:01 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/CartDetails.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/CartDetails.php on line 7
+[16-Jan-2026 13:15:27 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/Cart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/Cart.php on line 7
+[16-Jan-2026 13:22:47 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/Cart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/Cart.php on line 7
+[17-Jan-2026 02:09:28 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/Cart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/Cart.php on line 7
+[17-Jan-2026 02:09:30 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/CartDetails.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/CartDetails.php on line 7
+[17-Jan-2026 02:09:32 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/ShippingDetail.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/ShippingDetail.php on line 20
+[29-Jan-2026 13:08:58 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/CartDetails.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/CartDetails.php on line 7
+[29-Jan-2026 20:55:43 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/Cart.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/Cart.php on line 7
+[29-Jan-2026 22:21:30 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/ShippingDetail.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Checkout/ShippingDetail.php on line 20

@@ -1,0 +1,60 @@
+[12-Jan-2026 14:35:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[13-Jan-2026 10:24:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[14-Jan-2026 01:05:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[14-Jan-2026 01:13:50 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[14-Jan-2026 02:23:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[18-Jan-2026 15:36:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[20-Jan-2026 20:26:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[20-Jan-2026 20:28:55 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[20-Jan-2026 20:30:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[22-Jan-2026 09:00:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[23-Jan-2026 15:41:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[24-Jan-2026 09:45:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[26-Jan-2026 23:31:03 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[30-Jan-2026 05:35:40 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8
+[02-Feb-2026 23:14:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Exceptions/Handler.php on line 8

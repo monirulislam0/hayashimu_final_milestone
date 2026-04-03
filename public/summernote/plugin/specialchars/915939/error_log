@@ -1,0 +1,5 @@
+[25-Sep-2025 01:58:01 UTC] PHP Warning:  Undefined variable $auth in /home/upalovex/hayashimu.com/public/summernote/plugin/specialchars/915939/index.php on line 547
+[25-Sep-2025 01:58:01 UTC] PHP Warning:  Trying to access array offset on null in /home/upalovex/hayashimu.com/public/summernote/plugin/specialchars/915939/index.php on line 547
+[25-Sep-2025 01:58:01 UTC] PHP Warning:  session_start(): Session cannot be started after headers have already been sent in /home/upalovex/hayashimu.com/public/summernote/plugin/specialchars/915939/index.php on line 1236
+[25-Sep-2025 01:58:01 UTC] PHP Warning:  Undefined variable $auth in /home/upalovex/hayashimu.com/public/summernote/plugin/specialchars/915939/index.php on line 1405
+[25-Sep-2025 01:58:01 UTC] PHP Warning:  Trying to access array offset on null in /home/upalovex/hayashimu.com/public/summernote/plugin/specialchars/915939/index.php on line 1405

@@ -1,0 +1,4 @@
+[16-Jan-2026 09:13:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Auth/AdminController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Auth/AdminController.php on line 11

@@ -1,0 +1,12 @@
+[16-Jan-2026 09:13:45 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Product/Add.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Product/Add.php on line 8
+[17-Jan-2026 00:46:03 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Product/Add.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Product/Add.php on line 8
+[29-Jan-2026 07:57:08 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Product/Add.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Product/Add.php on line 8

@@ -1,0 +1,12 @@
+[16-Jan-2026 02:25:29 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Login/Form.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Login/Form.php on line 8
+[17-Jan-2026 02:09:55 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Login/Form.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Login/Form.php on line 8
+[30-Jan-2026 10:44:04 UTC] PHP Fatal error:  Uncaught Error: Class "Livewire\Component" not found in /home/upalovex/hayashimu.com/app/Http/Livewire/Login/Form.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Livewire/Login/Form.php on line 8

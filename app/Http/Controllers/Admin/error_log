@@ -1,0 +1,68 @@
+[16-Jan-2026 12:34:24 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/DashboardController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/DashboardController.php on line 13
+[16-Jan-2026 12:34:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/HomePageContentController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/HomePageContentController.php on line 12
+[16-Jan-2026 12:34:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/NewsController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/NewsController.php on line 11
+[16-Jan-2026 12:34:29 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/OrderManagementController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/OrderManagementController.php on line 9
+[16-Jan-2026 12:34:31 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ProductController.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ProductController.php on line 17
+[16-Jan-2026 12:34:33 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ProductImageController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ProductImageController.php on line 12
+[16-Jan-2026 12:34:49 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ServiceController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ServiceController.php on line 10
+[16-Jan-2026 12:34:51 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/SettingController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/SettingController.php on line 8
+[16-Jan-2026 12:34:53 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/SliderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/SliderController.php on line 10
+[20-Jan-2026 03:12:35 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/DashboardController.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/DashboardController.php on line 13
+[20-Jan-2026 03:18:14 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ProductImageController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ProductImageController.php on line 12
+[20-Jan-2026 03:28:22 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ServiceController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ServiceController.php on line 10
+[20-Jan-2026 03:29:56 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/SettingController.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/SettingController.php on line 8
+[20-Jan-2026 03:38:27 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ProductController.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/ProductController.php on line 17
+[20-Jan-2026 03:39:32 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/SliderController.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/SliderController.php on line 10
+[20-Jan-2026 05:01:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/HomePageContentController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/HomePageContentController.php on line 12
+[20-Jan-2026 05:48:15 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\BaseController" not found in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/NewsController.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/app/Http/Controllers/Admin/NewsController.php on line 11

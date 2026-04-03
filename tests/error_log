@@ -1,0 +1,72 @@
+[11-Jan-2026 06:17:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[12-Jan-2026 00:55:44 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[12-Jan-2026 07:58:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[13-Jan-2026 00:37:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[13-Jan-2026 23:01:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[13-Jan-2026 23:01:00 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[14-Jan-2026 09:49:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[17-Jan-2026 08:35:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[17-Jan-2026 19:14:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[18-Jan-2026 23:36:51 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[19-Jan-2026 21:08:17 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[19-Jan-2026 22:52:30 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[20-Jan-2026 01:50:09 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[20-Jan-2026 20:27:25 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[24-Jan-2026 05:20:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[24-Jan-2026 05:20:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[25-Jan-2026 06:28:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7
+[02-Feb-2026 23:58:58 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Testing\TestCase" not found in /home/upalovex/hayashimu.com/tests/TestCase.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upalovex/hayashimu.com/tests/TestCase.php on line 7

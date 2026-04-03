@@ -1,0 +1,47 @@
+<div>
+    <div id="carouselFirstIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="none">
+        <div class="carousel-indicators circle">
+            @php $sl=0 @endphp
+            @foreach($top_sliders as $slider)
+                @php $sl++ @endphp
+            <button type="button" data-bs-target="#carouselFirstIndicators" data-bs-slide-to="{{ $sl }}" class="{{ ($sl==1)? 'active':'' }}" aria-current="{{ ($sl==1)? 'true':'' }}" aria-label="{{ $slider->title }}"></button>
+            @endforeach
+        </div>
+        <div class="carousel-inner">
+            @php $sl=0 @endphp
+            @foreach($top_sliders as $slider)
+                @php $sl++ @endphp
+            <div class="carousel-item {{ ($sl==1)?'active':'' }}">
+                <a href="#"><img src="{{ asset('storage/'.$slider->image) }}" class="d-block w-100" alt="{{ $slider->title }}"></a>
+            </div>
+            @endforeach
+        </div>
+    </div>
+   <div class="main-body">
+    <div class="second-carousel-container">
+        <div id="carouselSecondIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="none">
+            <div class="carousel-indicators square">
+                @for($i = 0; $i < ceil(count($down_sliders) / 2); $i++)
+                    <button type="button" data-bs-target="#carouselSecondIndicators" data-bs-slide-to="{{ $i }}" class="{{ $i === 0 ? 'active' : '' }}" aria-current="{{ $i === 0 ? 'true' : 'false' }}" aria-label="Slide {{ $i + 1 }}"></button>
+                @endfor
+            </div>
+            <div class="carousel-inner">
+                @for($i = 0; $i < count($down_sliders); $i += 2)
+                    <div class="carousel-item {{ $i === 0 ? 'active' : '' }}">
+                        <div class="d-flex gap-2 mb-5">
+                            <div>
+                                <a href="#"><img src="{{ asset('storage/'.$down_sliders[1]['image']) }}" class="d-block w-100" alt="..."></a>
+                            </div>
+                            @if($i + 1 < count($down_sliders))
+                                <div>
+                                    <a href="#"><img src="{{ asset('storage/'.$down_sliders[$i + 1]['image']) }}" class="d-block w-100" alt="..."></a>
+                                </div>
+                            @endif
+                        </div>
+                    </div>
+                @endfor
+            </div>
+        </div>
+    </div>
+</div>
+</div>

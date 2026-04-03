@@ -1,0 +1,9 @@
+vendor
+.env
+.robots.txt
+sitemap.xml
+spam-url.txt
+cgi-bin
+.htaccess
+.ab.htaccess
+node_modules
