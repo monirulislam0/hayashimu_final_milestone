@@ -142,6 +142,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right pb-0">
 {{--                                <a class="dropdown-item" href="page-user-profile.html"><i class="bx bx-user mr-50"></i> Edit Profile</a><a class="dropdown-item" href="app-email.html"><i class="bx bx-envelope mr-50"></i> My Inbox</a><a class="dropdown-item" href="app-todo.html"><i class="bx bx-check-square mr-50"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="bx bx-message mr-50"></i> Chats</a>--}}
+                                <a class="dropdown-item" href="{{ route('admin.change.password.form') }}"><i class="bx bx-lock-alt mr-50"></i> Change Password</a>
                                 <div class="dropdown-divider mb-0"></div><a class="dropdown-item" href="{{ route('admin.logout') }}"><i class="bx bx-power-off mr-50"></i> Logout</a>
                             </div>
                         </li>
