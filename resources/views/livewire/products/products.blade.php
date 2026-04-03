@@ -1,3 +1,4 @@
+
 <div class="row g-3 products-items">
     @if($products->count()>0)
     @foreach($products as $product)

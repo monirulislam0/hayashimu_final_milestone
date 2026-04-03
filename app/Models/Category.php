@@ -13,7 +13,7 @@ class Category extends Model
 
     protected $table = 'categories';
 
-    protected $fillable = ['name','slug','parent_id','featured','sorting','menu','hover_image','description','image','status','is_show_top_sidebar'];
+    protected $fillable = ['name','slug','parent_id','featured','sorting','menu','hover_image','description','image','status','is_show_top_sidebar','meta_title','meta_description'];
 
     /**
      * @var array
@@ -71,9 +71,9 @@ class Category extends Model
        return Cache::remember('category_product_with_slug_'.$slug,5000, function () use($query,$slug){
           return $query->where('slug',$slug)
                 ->with(['children'=>function($q){
-                    $q->select('id','parent_id','slug','name');
+                    $q->select('id','parent_id','slug','name','meta_title','meta_description');
                 }])
-              ->select('id','name','image','slug','description','is_show_top_sidebar')
+              ->select('id','name','image','slug','description','is_show_top_sidebar', 'meta_title', 'meta_description')
               ->first();
         });
     }

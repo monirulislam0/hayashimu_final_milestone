@@ -49,13 +49,37 @@
         <div class="col-12">
             <div class="form-group">
                 <label for="description">Description</label>
-                <textarea class="form-control @error('description') is-invalid @enderror" name="description" id="description">
-                    {{ old('description',(isset($category->description)) ? $category->description: '' )}}
-                </textarea>
+                <textarea class="form-control @error('description') is-invalid @enderror" name="description" id="description" rows="4" placeholder="Enter description">{{ old('description',(isset($category->description)) ? $category->description: '' )}}</textarea>
                 @if(isset($category->id))
                     <input type="hidden" name="id" value="{{ $category->id }}">
                 @endif
                 @error('description')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
+                <label for="meta_title">Meta Title</label>
+                <input type="text" id="meta_title"
+                       class="form-control @error('meta_title') is-invalid @enderror"
+                       name="meta_title" value="{{ old('meta_title',(isset($category->meta_title)) ? $category->meta_title: '' )}}" placeholder="Enter meta title (optional)">
+                @if(isset($category->id))
+                    <input type="hidden" name="id" value="{{ $category->id }}">
+                @endif
+                @error('meta_title')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
+                <label for="meta_description">Meta Description</label>
+                <textarea class="form-control @error('meta_description') is-invalid @enderror" name="meta_description" id="meta_description" rows="3" placeholder="Enter meta description (optional)">{{ old('meta_description',(isset($category->meta_description)) ? $category->meta_description: '' )}}</textarea>
+                @if(isset($category->id))
+                    <input type="hidden" name="id" value="{{ $category->id }}">
+                @endif
+                @error('meta_description')
                 <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>

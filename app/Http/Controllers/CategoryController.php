@@ -42,9 +42,14 @@ class CategoryController extends BaseController
             'name' => 'required|max:191|unique:categories',
             'sorting' => 'required|numeric',
             'image'     => 'mimes:jpg,jpeg,png,webp|max:5000',
-            'hover_image'     => 'mimes:jpg,jpeg,png,webp|max:5000'
+            'hover_image'     => 'mimes:jpg,jpeg,png,webp|max:5000',
+            'meta_title' => 'nullable|max:191',
+            'meta_description' => 'nullable|max:500'
         ]);
 
+        // Debug: Check specifically for textarea fields
+       dd($request->all());
+        
         $params = $request->except('_token');
 
         $category = $this->categoryRepository->createCategory($params);
@@ -76,9 +81,10 @@ class CategoryController extends BaseController
             'name' => 'required|max:191',
             'sorting' => 'required|numeric',
             'image'     => 'mimes:jpg,jpeg,png,webp|max:5000',
-            'hover_image'     => 'mimes:jpg,jpeg,png,webp|max:5000'
+            'hover_image'     => 'mimes:jpg,jpeg,png,webp|max:5000',
+            'meta_title' => 'nullable|max:191',
+            'meta_description' => 'nullable|max:500'
         ]);
-
         $params = $request->except('_token');
         $category = $this->categoryRepository->updateCategory($params);
 

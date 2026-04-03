@@ -33,8 +33,15 @@ class FrontendController extends BaseController
     }
 
     public function categoryProduct($slug){
-        $this->setPageTitle(config('settings.site_title'),'Products');
+
+
         $category = Category::categoryProductWithSlug($slug);
+         $this->setPageTitle($category->name, null, $category->meta_title, strip_tags($category->meta_description), $category->meta_title);
+
+
+
+
+        // dd($category);
         return view('products',compact('category'));
     }
     public function productCenter(){
@@ -52,7 +59,7 @@ class FrontendController extends BaseController
         if(!$product){
             abort(404);
         }
-        $this->setPageTitle(config('app.name'), $product['name'], $product['meta_tags'], $product['meta_description'], $product['meta_title']);
+        $this->setPageTitle($product['name'], null, $product['meta_tags'], $product['meta_description'], $product['meta_title']);
         return view('product-detail', compact('product'));
     }
 
