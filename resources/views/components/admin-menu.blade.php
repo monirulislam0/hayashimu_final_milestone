@@ -49,8 +49,8 @@
                 </li>
                 <li class=" nav-item"><a href="{{ route('admin.contact-message') }}"><i class="bx bx-mail-send"></i><span class="menu-title" data-i18n="subscription">Contact Message</span></a>
                 </li>
-                <li class=" nav-item"><a href="{{ route('admin.services.index') }}"><i class="bx bx-mail-send"></i><span class="menu-title" data-i18n="services">Services</span></a>
-                </li>
+                {{-- <li class=" nav-item"><a href="{{ route('admin.services.index') }}"><i class="bx bx-mail-send"></i><span class="menu-title" data-i18n="services">Services</span></a>
+                </li> --}}
                 <li class=" nav-item"><a href="{{ route('admin.setting') }}"><i class="bx bx-cog"></i><span class="menu-title" data-i18n="setting">Settings</span></a>
                 </li>
 
