@@ -50,9 +50,9 @@
                             <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.about') }}">About Us</a>
                             </li>
-                            <li class="nav-item main-nav">
+                            {{-- <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.service') }}">Service</a>
-                            </li>
+                            </li> --}}
                             <li class="nav-item main-nav">
                                 
                                  <div class="d-flex justify-content-between h-md-100">

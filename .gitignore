@@ -7,3 +7,7 @@ cgi-bin
 .htaccess
 .ab.htaccess
 node_modules
+storage/framework/cache
+storage/framework/sessions
+storage/framework/views
+storage/logs

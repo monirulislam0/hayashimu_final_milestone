@@ -17,7 +17,7 @@
             @endforeach
         </div>
     </div>
-    <div>
+    {{-- <div>
         <div class="second-carousel-container">
             <div id="carouselSecondIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="none">
                 <div class="carousel-indicators square">
@@ -44,5 +44,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>

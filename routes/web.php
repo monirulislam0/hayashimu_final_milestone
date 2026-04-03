@@ -37,9 +37,9 @@ Route::get('/inquire/success', [FrontendController::class, 'inquireSuccess'])->n
 
 // use Illuminate\Support\Facades\Artisan;
 
-Route::get('/hash/make', function(){
- return Hash::make('admin1234');
-});
+// Route::get('/hash/make', function(){
+//  return Hash::make('admin1234');
+// });
 
 
 //     Artisan::call('storage:link');
