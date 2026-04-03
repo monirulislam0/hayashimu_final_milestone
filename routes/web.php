@@ -1,19 +1,20 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FrontendController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Route;
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+ * |--------------------------------------------------------------------------
+ * | Web Routes
+ * |--------------------------------------------------------------------------
+ * |
+ * | Here is where you can register web routes for your application. These
+ * | routes are loaded by the RouteServiceProvider and all of them will
+ * | be assigned to the "web" middleware group. Make something great!
+ * |
+ */
 
 Route::get('/', [FrontendController::class, 'home'])->name('frontend.home');
 Route::get('/about-us', [FrontendController::class, 'aboutUs'])->name('frontend.about');
@@ -32,14 +33,11 @@ Route::get('checkout', [FrontendController::class, 'checkout'])->name('frontend.
 Route::get('order-complete/{order_no}', [FrontendController::class, 'completeOrder'])->name('frontend.order.complete');
 Route::get('/inquire', [FrontendController::class, 'inquire'])->name('frontend.inquire');
 Route::get('/inquire/success', [FrontendController::class, 'inquireSuccess'])->name('frontend.inquire.success');
-//Route::get('user', [FrontendController::class, 'myAccount'])->name('frontend.user');
-//Route::get('login', [FrontendController::class, 'login'])->name('frontend.login');
+// Route::get('user', [FrontendController::class, 'myAccount'])->name('frontend.user');
+// Route::get('login', [FrontendController::class, 'login'])->name('frontend.login');
 
-// use Illuminate\Support\Facades\Artisan;
-
-// Route::get('/hash/make', function(){
-//  return Hash::make('admin1234');
+// Route::get('/hash/make', function () {
+//       return Hash::make('admin1234');
 // });
-
 
 //     Artisan::call('storage:link');
