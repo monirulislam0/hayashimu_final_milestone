@@ -35,11 +35,11 @@
                                         <td style="max-width: 180px; word-wrap: break-word;">{{ $message->email }}</td>
                                         <td style="max-width: 300px; word-wrap: break-word;">{{ Str::limit($message->message, 100) }}</td>
                                         <td>
-                                            <div class="btn-group btn-group-sm" role="group">
+                                            <div class="d-flex gap-1">
                                                 <a href="{{ route('admin.contact-message.view', $message->id) }}" class="btn btn-sm btn-info" title="View Details">
                                                     <i class="bx bx-show"></i>
                                                 </a>
-                                                <form method="POST" action="{{ route('admin.contact-message.delete', $message->id) }}" onsubmit="return confirm('Are you sure you want to delete this message?')" style="display: inline;">
+                                                <form method="POST" action="{{ route('admin.contact-message.delete', $message->id) }}" onsubmit="return confirm('Are you sure you want to delete this message?')">
                                                     @csrf
                                                     <button type="submit" class="btn btn-sm btn-danger" title="Delete">
                                                         <i class="bx bx-trash"></i>
