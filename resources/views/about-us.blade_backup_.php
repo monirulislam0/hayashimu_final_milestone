@@ -5,10 +5,10 @@
         }
     </style>
     <main>
-        {{-- <video id="aboutus-video" width="100%" autoplay muted loop>
+        <video id="aboutus-video" width="100%" autoplay muted loop>
             <source src="{{ asset('storage/'.$content->extra) }}" type="video/mp4">
             Your browser does not support the video tag.
-        </video> --}}
+        </video>
 
         <div class="aboutus-bg background_image">
             <div class="container innerpage-container py-5">
@@ -21,7 +21,7 @@
 
                 <div class="row py-5">
                     <div class="col-md-8" style="background-color: #00000066">
-                        {!! $content->content !!}
+                        {!! $content['content'] !!}
                     </div>
                     <div class="col-md-4"></div>
                 </div>

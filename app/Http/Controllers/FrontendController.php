@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Enums\NewsTypeEnum;
 use App\Models\Category;
+use App\Models\Faq;
 use App\Models\News;
 use App\Models\Order;
 use App\Models\Product;
@@ -28,6 +29,8 @@ class FrontendController extends BaseController
         $this->setPageTitle(config('settings.site_title'),'About Us');
         $page_type = 'about';
         $content = StaticPage::aboutContent()->first();
+
+
         return view('about-us',compact('content','page_type'));
 
     }
@@ -155,5 +158,12 @@ class FrontendController extends BaseController
     {
         $this->setPageTitle('Inquire', 'Inquire Success');
         return view('inquire-success');
+    }
+
+    public function faq()
+    {
+        $this->setPageTitle(config('settings.site_title'), 'FAQ');
+        $faqs = Faq::orderBy('created_at', 'asc')->get();
+        return view('faq', compact('faqs'));
     }
 }

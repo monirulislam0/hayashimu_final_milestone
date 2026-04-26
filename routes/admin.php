@@ -116,4 +116,13 @@ Route::middleware(['auth:admin'])->group(function () {
         Route::get('/','App\Http\Controllers\Admin\OrderManagementController@index')->name('orders.index');
         Route::get('/view/{id}','App\Http\Controllers\Admin\OrderManagementController@viewOrder')->name('orders.view');
     });
+
+    Route::group(['prefix'=> 'faqs'],function () {
+        Route::get('/', [App\Http\Controllers\Admin\FaqController::class, 'index'])->name('faqs.index');
+        Route::get('/create', [App\Http\Controllers\Admin\FaqController::class, 'create'])->name('faqs.create');
+        Route::post('/store', [App\Http\Controllers\Admin\FaqController::class, 'store'])->name('faqs.store');
+        Route::get('/{faq}/edit', [App\Http\Controllers\Admin\FaqController::class, 'edit'])->name('faqs.edit');
+        Route::put('/{faq}', [App\Http\Controllers\Admin\FaqController::class, 'update'])->name('faqs.update');
+        Route::delete('/{faq}', [App\Http\Controllers\Admin\FaqController::class, 'destroy'])->name('faqs.destroy');
+    });
 });

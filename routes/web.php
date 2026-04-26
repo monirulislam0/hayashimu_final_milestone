@@ -33,6 +33,7 @@ Route::get('checkout', [FrontendController::class, 'checkout'])->name('frontend.
 Route::get('order-complete/{order_no}', [FrontendController::class, 'completeOrder'])->name('frontend.order.complete');
 Route::get('/inquire', [FrontendController::class, 'inquire'])->name('frontend.inquire');
 Route::get('/inquire/success', [FrontendController::class, 'inquireSuccess'])->name('frontend.inquire.success');
+Route::get('/faq', [FrontendController::class, 'faq'])->name('frontend.faq');
 // Route::get('user', [FrontendController::class, 'myAccount'])->name('frontend.user');
 // Route::get('login', [FrontendController::class, 'login'])->name('frontend.login');
 

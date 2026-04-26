@@ -47,6 +47,8 @@
                 </li>
                 <li class=" nav-item"><a href="{{ route('admin.news.index') }}"><i class="bx bx-film"></i><span class="menu-title" data-i18n="news">News</span></a>
                 </li>
+                <li class=" nav-item"><a href="{{ route('admin.faqs.index') }}"><i class="bx bx-help-circle"></i><span class="menu-title" data-i18n="faqs">FAQs</span></a>
+                </li>
                 <li class=" nav-item"><a href="{{ route('admin.contact-message') }}"><i class="bx bx-mail-send"></i><span class="menu-title" data-i18n="subscription">Contact Message</span></a>
                 </li>
                 {{-- <li class=" nav-item"><a href="{{ route('admin.services.index') }}"><i class="bx bx-mail-send"></i><span class="menu-title" data-i18n="services">Services</span></a>

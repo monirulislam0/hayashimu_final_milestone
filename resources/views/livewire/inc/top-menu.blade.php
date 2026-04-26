@@ -50,6 +50,9 @@
                             <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.about') }}">About Us</a>
                             </li>
+                            <li class="nav-item main-nav">
+                                <a class="nav-link nav-link-names" href="{{ route('frontend.faq') }}">FAQ</a>
+                            </li>
                             {{-- <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.service') }}">Service</a>
                             </li> --}}

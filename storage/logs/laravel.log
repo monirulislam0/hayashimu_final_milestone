@@ -1,0 +1,89 @@
+[2026-04-17 15:04:27] production.ERROR: Command "make:conroller" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:export
+    make:factory
+    make:import
+    make:job
+    make:listener
+    make:livewire
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:conroller\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:export
+    make:factory
+    make:import
+    make:job
+    make:listener
+    make:livewire
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test at C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\symfony\\console\\Application.php(262): Symfony\\Component\\Console\\Application->find('make:conroller')
+#1 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\symfony\\console\\Application.php(174): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(200): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 {main}
+"} 
+[2026-04-22 16:11:17] production.ERROR: PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 2 {"exception":"[object] (Psy\\Exception\\ParseErrorException(code: 0): PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 2 at C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\psy\\psysh\\src\\Exception\\ParseErrorException.php:38)
+[stacktrace]
+#0 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\psy\\psysh\\src\\CodeCleaner.php(335): Psy\\Exception\\ParseErrorException::fromParseError(Object(PhpParser\\Error))
+#1 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\psy\\psysh\\src\\CodeCleaner.php(264): Psy\\CodeCleaner->parse('<?php \\n\\\\ = App\\\\...', false)
+#2 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\psy\\psysh\\src\\Shell.php(860): Psy\\CodeCleaner->clean(Array, false)
+#3 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\psy\\psysh\\src\\Shell.php(889): Psy\\Shell->addCode('\\n\\\\ = App\\\\Models...', true)
+#4 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\psy\\psysh\\src\\Shell.php(1343): Psy\\Shell->setCode('\\n\\\\ = App\\\\Models...', true)
+#5 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\tinker\\src\\Console\\TinkerCommand.php(76): Psy\\Shell->execute('\\n\\\\ = App\\\\Models...')
+#6 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Laravel\\Tinker\\Console\\TinkerCommand->handle()
+#7 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#8 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#9 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#10 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(662): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#11 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(208): Illuminate\\Container\\Container->call(Array)
+#12 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\symfony\\console\\Command\\Command.php(326): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#13 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(177): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\symfony\\console\\Application.php(1081): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#15 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\symfony\\console\\Application.php(320): Symfony\\Component\\Console\\Application->doRunCommand(Object(Laravel\\Tinker\\Console\\TinkerCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\symfony\\console\\Application.php(174): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(200): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\Users\\Taluqdar\\Desktop\\hayashimu_final_milestone\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 {main}
+"} 
