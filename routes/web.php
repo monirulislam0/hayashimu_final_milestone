@@ -34,6 +34,7 @@ Route::get('order-complete/{order_no}', [FrontendController::class, 'completeOrd
 Route::get('/inquire', [FrontendController::class, 'inquire'])->name('frontend.inquire');
 Route::get('/inquire/success', [FrontendController::class, 'inquireSuccess'])->name('frontend.inquire.success');
 Route::get('/faq', [FrontendController::class, 'faq'])->name('frontend.faq');
+Route::get('/page/{slug}', [FrontendController::class, 'page'])->name('frontend.page');
 // Route::get('user', [FrontendController::class, 'myAccount'])->name('frontend.user');
 // Route::get('login', [FrontendController::class, 'login'])->name('frontend.login');
 

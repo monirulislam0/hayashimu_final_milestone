@@ -7,6 +7,7 @@ use App\Models\Category;
 use App\Models\Faq;
 use App\Models\News;
 use App\Models\Order;
+use App\Models\Page;
 use App\Models\Product;
 use App\Models\StaticPage;
 use Illuminate\Http\Request;
@@ -165,5 +166,18 @@ class FrontendController extends BaseController
         $this->setPageTitle(config('settings.site_title'), 'FAQ');
         $faqs = Faq::orderBy('created_at', 'asc')->get();
         return view('faq', compact('faqs'));
+    }
+
+    public function page($slug)
+    {
+        $page = Page::where('slug', $slug)->active()->first();
+        
+        if (!$page) {
+            abort(404);
+        }
+        
+        $this->setPageTitle($page->meta_title ?: $page->title, null, $page->meta_title, $page->meta_description, $page->meta_tags);
+        
+        return view('page', compact('page'));
     }
 }

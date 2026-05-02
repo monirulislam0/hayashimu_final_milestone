@@ -53,6 +53,28 @@
                             <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.faq') }}">FAQ</a>
                             </li>
+                            <li class="nav-item main-nav">
+                                 <div class="d-flex justify-content-between h-md-100">
+                                     <a class="nav-link nav-link-names" href="#">Pages</a>
+                                 
+                                    <button class="btn btn-outline-none d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSubPages" aria-controls="navbarNavSubPages" aria-expanded="false" aria-label="Toggle navigation navbarNavSubPages">
+                                        <i class="fa-solid fa-caret-down fs-4 fa-caret-down-navbar" style="color: #fff; margin-top: -4px;"></i>
+                                    </button>
+                                </div>
+
+                                <div class="submenu navbar-nav" id="navbarNavSubPages">
+                                    <ul>
+                                        @php
+                                            $pages = \App\Models\Page::active()->ordered()->get();
+                                        @endphp
+                                        @foreach($pages as $page)
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('frontend.page', $page->slug) }}">{{ $page->title }}</a>
+                                        </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </li>
                             {{-- <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.service') }}">Service</a>
                             </li> --}}

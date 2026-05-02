@@ -21,7 +21,7 @@
 
                 <div class="row py-5">
                     <div class="col-md-8" style="background-color: #00000066">
-                        {!! $content['content'] !!}
+                        {!! $content->content !!}
                     </div>
                     <div class="col-md-4"></div>
                 </div>
