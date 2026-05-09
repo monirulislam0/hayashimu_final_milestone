@@ -13,9 +13,10 @@
                     @include('admin.includes.flash')
                     <div class="card-content">
                         <div class="card-body">
-                            <form class="form form-vertical" 
+                            <form class="form form-vertical"  id="pgForm"
                             action="{{ route('admin.pages.store') }}" 
-                            enctype="multipart/form-data" method="POST">
+                            enctype="multipart/form-data" 
+                            method="POST">
                                 @csrf
                                 <div class="form-body">
                                     <div class="row">
@@ -136,7 +137,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12 d-flex justify-content-end">
-                                            <input type="submit" value="Create Page" class="btn btn-primary mr-1 mb-1">
+                                            <input type="submit" value="Create Page" class="btn btn-primary mr-1 mb-1" id="submitBtn">
                                            
                                             <a href="{{ route('admin.pages.index') }}"
                                                 class="btn btn-light-secondary mr-1 mb-1">Cancel</a>
@@ -169,4 +170,17 @@
             preview.style.display = 'none';
         }
     }
+
+    // JavaScript form submission with click event
+    document.addEventListener('DOMContentLoaded', function() {
+        const submitBtn = document.getElementById('submitBtn');
+        const form = document.querySelector('#pgForm');
+
+        submitBtn.addEventListener('click', function(event) {
+           
+            event.preventDefault(); // Prevent default form submission
+           
+            form.submit();
+        });
+    });
 </script>

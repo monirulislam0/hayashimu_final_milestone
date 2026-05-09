@@ -12,7 +12,9 @@
                     @include('admin.includes.flash')
                     <div class="card-content">
                         <div class="card-body">
-                            <form class="form form-vertical" action="{{ route('admin.pages.update', $page) }}" method="POST">
+                            <form class="form form-vertical" action="{{ route('admin.pages.update', $page) }}" method="POST"
+                                enctype="multipart/form-data"
+                            >
                                 @csrf
                                 @method('PUT')
                                 <div class="form-body">

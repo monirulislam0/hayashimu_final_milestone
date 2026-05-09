@@ -23,44 +23,43 @@ class PageController extends Controller
     public function store(Request $request)
     {
 
-        dd($request->all());
 
-        // try {
-        //     $request->validate([
-        //         'title' => 'required|string|max:255',
-        //         'slug' => 'required|string|max:255|unique:pages,slug',
-        //         'content' => 'required|string',
-        //         'page_banner' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-        //         'meta_description' => 'nullable|string|max:255',
-        //         'meta_title' => 'nullable|string|max:255',
-        //         'meta_keys' => 'nullable|string|max:255',
-        //         'meta_tags' => 'nullable|string|max:255',
-        //         'status' => 'required|boolean',
-        //         'sorting' => 'integer|nullable|min:0',
-        //     ]);
+        try {
+            $request->validate([
+                'title' => 'required|string|max:255',
+                'slug' => 'required|string|max:255|unique:pages,slug',
+                'content' => 'required|string',
+                'page_banner' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+                'meta_description' => 'nullable|string|max:255',
+                'meta_title' => 'nullable|string|max:255',
+                'meta_keys' => 'nullable|string|max:255',
+                'meta_tags' => 'nullable|string|max:255',
+                'status' => 'required|boolean',
+                'sorting' => 'integer|nullable|min:0',
+            ]);
 
-        //     $data = $request->all();
-        //     $data['slug'] = Str::slug($data['slug']);
+            $data = $request->all();
+            $data['slug'] = Str::slug($data['slug']);
 
-        //     // Handle banner upload
-        //     if ($request->hasFile('page_banner')) {
-        //         $banner = $request->file('page_banner');
-        //         $bannerName = time() . '_' . $banner->getClientOriginalName();
-        //         $banner->move(public_path('storage/pages'), $bannerName);
-        //         $data['page_banner'] = 'pages/' . $bannerName;
-        //     }
+            // Handle banner upload
+            if ($request->hasFile('page_banner')) {
+                $banner = $request->file('page_banner');
+                $bannerName = time() . '_' . $banner->getClientOriginalName();
+                $banner->move(public_path('storage/pages'), $bannerName);
+                $data['page_banner'] = 'pages/' . $bannerName;
+            }
 
-        //     Page::create($data);
+            Page::create($data);
 
-        //     return redirect()
-        //         ->route('admin.pages.index')
-        //         ->with('success', 'Page created successfully.');
-        // } catch (\Exception $e) {
-        //     return redirect()
-        //         ->back()
-        //         ->withInput()
-        //         ->with('error', 'Error creating page: ' . $e->getMessage());
-        // }
+            return redirect()
+                ->route('admin.pages.index')
+                ->with('success', 'Page created successfully.');
+        } catch (\Exception $e) {
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with('error', 'Error creating page: ' . $e->getMessage());
+        }
     }
 
     public function edit(Page $page)
@@ -70,6 +69,8 @@ class PageController extends Controller
 
     public function update(Request $request, Page $page)
     {
+
+
         try {
             $request->validate([
                 'title' => 'required|string|max:255',
