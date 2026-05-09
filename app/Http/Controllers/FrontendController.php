@@ -30,7 +30,14 @@ class FrontendController extends BaseController
             ->take(6)
             ->get();
         
-        return view('home',compact('page_type', 'featuredNews'));
+        // Get featured products (maximum 12 items)
+        $featuredProducts = Product::where('status', 1)
+            ->where('is_featured', 1)
+            ->orderBy('created_at', 'desc')
+            ->take(12)
+            ->get();
+        
+        return view('home',compact('page_type', 'featuredNews', 'featuredProducts'));
     }
     
 

@@ -13,11 +13,12 @@ class Product extends Model
 
     protected $table = 'products';
     protected $fillable = ['name','slug','emi_text','product_attribute','description','meta_title','meta_tags','meta_description','image',
-        'price','discount','stock','unit','status','featured','is_show_top_sidebar','new_item','in_stock','model','brand','pdf_file'];
+        'price','discount','stock','unit','status','featured','is_featured','is_show_top_sidebar','new_item','in_stock','model','brand','pdf_file'];
 
     protected $casts=[
         'status'           => 'boolean',
         'featured'         => 'boolean',
+        'is_featured'      => 'boolean',
         'new_item'         => 'boolean',
         ];
 

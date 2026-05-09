@@ -41,6 +41,7 @@ Route::middleware(['auth:admin'])->group(function () {
         Route::post('/store', 'App\Http\Controllers\Admin\ProductController@store')->name('products.store');
         Route::get('/{id}/edit', 'App\Http\Controllers\Admin\ProductController@edit')->name('products.edit');
         Route::post('update', 'App\Http\Controllers\Admin\ProductController@update')->name('products.update');
+        Route::post('/{id}/toggle-featured', 'App\Http\Controllers\Admin\ProductController@toggleFeatured')->name('products.toggle-featured');
         Route::get('/{id}/delete', 'App\Http\Controllers\Admin\ProductController@delete')->name('products.delete');
         Route::post('/product/image/store', 'App\Http\Controllers\Admin\ProductImageController@upload')->name('products.images.upload');
         Route::get('/product/image/delete/{id}', 'App\Http\Controllers\Admin\ProductImageController@delete')->name('products.images.delete');

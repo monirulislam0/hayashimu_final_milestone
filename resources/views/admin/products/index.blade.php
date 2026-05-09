@@ -29,6 +29,7 @@
                                     <th>Category</th>
                                     <th>Brand</th>
                                     <th>Model</th>
+                                    <th>Featured</th>
                                     <th>Status</th>
                                     <th>Is Show Sidebar?</th>
                                     <th>ACTION</th>
@@ -50,6 +51,17 @@
                                         </td>
                                         <td class="text-bold-500">{{ $product->brand }}</td>
                                         <td class="text-bold-500">{{ $product->model }}</td>
+                                        <td>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" 
+                                                       id="featured_{{ $product->id }}" 
+                                                       {{ $product->is_featured ? 'checked' : '' }}
+                                                       onchange="toggleProductFeatured({{ $product->id }}, this.checked)">
+                                                <label class="form-check-label" for="featured_{{ $product->id }}">
+                                                    {{ $product->is_featured ? 'Yes' : 'No' }}
+                                                </label>
+                                            </div>
+                                        </td>
                                         <td>{{ ($product->status) ? 'Active' : 'Inactive' }}</td>
                                         <td>{{ ($product->is_show_top_sidebar) ? 'Active' : 'Inactive' }}</td>
                                         <td>
@@ -77,3 +89,32 @@
         </div>
     </div>
 </x-admin-layout>
+
+<script>
+function toggleProductFeatured(productId, isFeatured) {
+    fetch(`/admin/products/${productId}/toggle-featured`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify({
+            is_featured: isFeatured
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Update the label text
+            const label = document.querySelector(`label[for="featured_${productId}"]`);
+            label.textContent = isFeatured ? 'Yes' : 'No';
+        } else {
+            alert('Error updating featured status');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error updating featured status');
+    });
+}
+</script>

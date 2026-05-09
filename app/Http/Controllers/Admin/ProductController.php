@@ -186,4 +186,34 @@ class ProductController extends BaseController
         return $this->responseRedirectBack('Data imported Successfully.', 'success', false, true);
     }
 
+    public function toggleFeatured($id, Request $request)
+    {
+        $product = $this->productRepository->find($id);
+        
+        if (!$product) {
+            return response()->json(['success' => false, 'message' => 'Product not found'], 404);
+        }
+
+        $product->is_featured = $request->input('is_featured', false);
+        $product->save();
+
+        // Clear relevant cache
+        $this->clearProductCache($product);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Featured status updated successfully',
+            'is_featured' => $product->is_featured
+        ]);
+    }
+
+    private function clearProductCache($product)
+    {
+        // Clear product-related caches
+        foreach ($product->categories as $category) {
+            Cache::forget('category_product_with_slug_'.$category->slug);
+        }
+        Cache::forget('products_list');
+    }
+
 }
