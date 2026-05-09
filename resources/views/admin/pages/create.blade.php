@@ -57,12 +57,12 @@
                                                     name="page_banner" accept="image/*" onchange="previewBanner(event)">
                                                 <small class="text-muted">Allowed formats: jpeg, png, jpg, gif (Max:
                                                     2MB)</small>
-                                                <div id="bannerPreview" class="mt-2" style="display: none;">
+                                                <div id="bannerPreview" class="mt-2" style="display: none; width: 100%;">
                                                     <img id="bannerPreviewImg" src="#" alt="Banner Preview"
-                                                        style="max-width: 200px; max-height: 100px;"
+                                                        style="width: 100%; height: 300px; object-fit: cover;"
                                                         class="img-thumbnail">
                                                     <br>
-                                                    <small class="text-muted">Banner preview</small>
+                                                    <small class="text-muted">Banner preview (full width, 300px height)</small>
                                                 </div>
                                                 @error('page_banner')
                                                     <div class="text-danger">{{ $message }}</div>
@@ -90,7 +90,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="meta_keys">Meta Keywords</label>
                                                 <input type="text" class="form-control" id="meta_keys"
@@ -101,7 +101,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="meta_tags">Meta Tags</label>
                                                 <input type="text" class="form-control" id="meta_tags"
@@ -112,7 +112,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="sorting">Sorting Order</label>
                                                 <input type="number" class="form-control" id="sorting"
@@ -122,7 +122,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="status">Status</label>
                                                 <select class="form-control" id="status" name="status">

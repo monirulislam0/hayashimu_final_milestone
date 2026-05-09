@@ -39,7 +39,7 @@
                                         <td>{{ $page->slug }}</td>
                                         <td>
                                             @if($page->page_banner)
-                                                <img src="{{ asset('storage/' . $page->page_banner) }}" alt="Banner" style="max-width: 50px; max-height: 30px;" class="img-thumbnail">
+                                                <img src="{{ asset('storage/' . $page->page_banner) }}" alt="Banner" style="max-width: 120px; max-height: 80px;" class="img-thumbnail">
                                             @else
                                                 <span class="text-muted">No Banner</span>
                                             @endif

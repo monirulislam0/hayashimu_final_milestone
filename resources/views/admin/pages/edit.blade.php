@@ -39,8 +39,8 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <label for="content">Content</label>
-                                                <textarea class="form-control" id="content" name="content" rows="10" placeholder="Enter page content" required>{{ old('content', $page->content) }}</textarea>
+                                                <label for="meta_description">Content</label>
+                                                <textarea class="form-control" id="meta_description" name="content" rows="10" placeholder="Enter page content" required>{{ old('content', $page->content) }}</textarea>
                                                 @error('content')
                                                     <div class="text-danger">{{ $message }}</div>
                                                 @enderror
@@ -53,22 +53,22 @@
                                                 <small class="text-muted">Allowed formats: jpeg, png, jpg, gif (Max: 2MB)</small>
                                                 @if($page->page_banner)
                                                     <div class="mt-2" id="currentBanner">
-                                                        <img src="{{ asset('storage/' . $page->page_banner) }}" alt="Current Banner" style="max-width: 200px; max-height: 100px;" class="img-thumbnail">
+                                                        <img src="{{ asset('storage/' . $page->page_banner) }}" alt="Current Banner" style="width: 100%; height: 300px; object-fit: cover;" class="img-thumbnail">
                                                         <br>
-                                                        <small class="text-muted">Current banner</small>
+                                                        <small class="text-muted">Current banner (full width, 300px height)</small>
                                                     </div>
                                                 @endif
-                                                <div id="bannerPreview" class="mt-2" style="display: none;">
-                                                    <img id="bannerPreviewImg" src="#" alt="Banner Preview" style="max-width: 200px; max-height: 100px;" class="img-thumbnail">
+                                                <div id="bannerPreview" class="mt-2" style="display: none; width: 100%;">
+                                                    <img id="bannerPreviewImg" src="#" alt="Banner Preview" style="width: 100%; height: 300px; object-fit: cover;" class="img-thumbnail">
                                                     <br>
-                                                    <small class="text-muted">New banner preview</small>
+                                                    <small class="text-muted">New banner preview (full width, 300px height)</small>
                                                 </div>
                                                 @error('page_banner')
                                                     <div class="text-danger">{{ $message }}</div>
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="meta_title">Meta Title</label>
                                                 <input type="text" class="form-control" id="meta_title" name="meta_title" value="{{ old('meta_title', $page->meta_title) }}" placeholder="Enter meta title">
@@ -77,16 +77,16 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="meta_description">Meta Description</label>
-                                                <textarea class="form-control" id="meta_description" name="meta_description" rows="3" placeholder="Enter meta description">{{ old('meta_description', $page->meta_description) }}</textarea>
+                                                <label for="meta_content">Meta Description</label>
+                                                <textarea class="form-control" id="meta_content" name="meta_description" rows="3" placeholder="Enter meta description">{{ old('meta_description', $page->meta_description) }}</textarea>
                                                 @error('meta_description')
                                                     <div class="text-danger">{{ $message }}</div>
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="meta_keys">Meta Keywords</label>
                                                 <input type="text" class="form-control" id="meta_keys" name="meta_keys" value="{{ old('meta_keys', $page->meta_keys) }}" placeholder="Enter meta keywords">
@@ -95,7 +95,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="meta_tags">Meta Tags</label>
                                                 <input type="text" class="form-control" id="meta_tags" name="meta_tags" value="{{ old('meta_tags', $page->meta_tags) }}" placeholder="Enter meta tags">
@@ -104,7 +104,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="sorting">Sorting Order</label>
                                                 <input type="number" class="form-control" id="sorting" name="sorting" value="{{ old('sorting', $page->sorting) }}" min="0">
@@ -113,7 +113,7 @@
                                                 @enderror
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="status">Status</label>
                                                 <select class="form-control" id="status" name="status">
