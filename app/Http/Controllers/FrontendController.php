@@ -22,7 +22,15 @@ class FrontendController extends BaseController
        //  Artisan::call('storage:link');
         $this->setPageTitle(config('settings.site_title'),'Home');
         $page_type = 'home';
-        return view('home',compact('page_type'));
+        
+        // Get featured news (maximum 6 items)
+        $featuredNews = News::where('status', 1)
+            ->where('is_featured', 1)
+            ->orderBy('created_at', 'desc')
+            ->take(6)
+            ->get();
+        
+        return view('home',compact('page_type', 'featuredNews'));
     }
     
 

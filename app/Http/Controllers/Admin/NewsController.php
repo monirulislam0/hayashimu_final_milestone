@@ -34,7 +34,8 @@ class NewsController extends BaseController
             'image'     => 'mimes:jpg,jpeg,png,webp|max:5000',
             'meta_title' => 'nullable|max:255',
             'meta_description' => 'nullable|max:500',
-            'meta_keywords' => 'nullable|max:255'
+            'meta_keywords' => 'nullable|max:255',
+            'is_featured' => 'nullable|boolean'
         ]);
 
         $params = $request->except('_token');
@@ -64,7 +65,8 @@ class NewsController extends BaseController
             'image'     => 'mimes:jpg,jpeg,png,webp|max:5000',
             'meta_title' => 'nullable|max:255',
             'meta_description' => 'nullable|max:500',
-            'meta_keywords' => 'nullable|max:255'
+            'meta_keywords' => 'nullable|max:255',
+            'is_featured' => 'nullable|boolean'
         ]);
 
         $params = $request->except('_token');
@@ -90,5 +92,26 @@ class NewsController extends BaseController
     protected function removeCache($type=null,$slug=null){
         Cache::forget('news_'.$type);
         Cache::forget('news_'.$slug);
+    }
+
+    public function toggleFeatured($id, Request $request)
+    {
+        $news = $this->newsRepository->findNewsById($id);
+        
+        if (!$news) {
+            return response()->json(['success' => false, 'message' => 'News not found'], 404);
+        }
+
+        $news->is_featured = $request->input('is_featured', false);
+        $news->save();
+
+        // Clear relevant cache
+        $this->removeCache($news->news_type, $news->slug);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Featured status updated successfully',
+            'is_featured' => $news->is_featured
+        ]);
     }
 }

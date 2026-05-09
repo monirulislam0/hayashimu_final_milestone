@@ -1,5 +1,5 @@
 @section('title')
-    {{ config('app.name') }} | Sliders
+    {{ config('app.name') }} | News
 @endsection
 <x-admin-layout>
     <div class="row justify-content-center" id="basic-table">
@@ -24,6 +24,7 @@
                                     <th>Image</th>
                                     <th>Title</th>
                                     <th>Type</th>
+                                    <th>Featured</th>
                                     <th>Status</th>
                                     <th>ACTION</th>
                                 </tr>
@@ -48,13 +49,25 @@
                                                 Certification
                                             @endif
                                         </td>
+                                        <td>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" 
+                                                       id="featured_{{ $data->id }}" 
+                                                       {{ $data->is_featured ? 'checked' : '' }}
+                                                       onchange="toggleFeatured({{ $data->id }}, this.checked)">
+                                                <label class="form-check-label" for="featured_{{ $data->id }}">
+                                                    {{ $data->is_featured ? 'Yes' : 'No' }}
+                                                </label>
+                                            </div>
+                                        </td>
                                         <td>{{ ($data->status) ? 'Active' : 'Inactive' }}</td>
                                         <td>
-                                            <a href="{{ route('admin.news.edit',$data->id ) }}"><i
-                                                    class="badge-circle badge-circle-light-secondary bx bx-edit font-medium-1"></i></a>
+                                            <a href="{{ route('admin.news.edit',$data->id ) }}" class="btn btn-sm btn-outline-primary me-1"><i
+                                                    class="bx bx-edit"></i> Edit</a>
                                             <a href="{{ route('admin.news.delete',$data->id ) }}"
-                                               onclick="return confirm('Are you sure you want to perform this action?')"><i
-                                                    class="badge-circle badge-circle-light-secondary bx bx-trash font-medium-1"></i></a>
+                                               class="btn btn-sm btn-outline-danger"
+                                               onclick="return confirm('Are you sure you want to delete this news item?')"><i
+                                                    class="bx bx-trash"></i> Delete</a>
                                         </td>
                                     </tr>
                                 @endforeach
@@ -68,3 +81,32 @@
         </div>
     </div>
 </x-admin-layout>
+
+<script>
+function toggleFeatured(newsId, isFeatured) {
+    fetch(`/admin/news/${newsId}/toggle-featured`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify({
+            is_featured: isFeatured
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Update the label text
+            const label = document.querySelector(`label[for="featured_${newsId}"]`);
+            label.textContent = isFeatured ? 'Yes' : 'No';
+        } else {
+            alert('Error updating featured status');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error updating featured status');
+    });
+}
+</script>

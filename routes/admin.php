@@ -74,6 +74,7 @@ Route::middleware(['auth:admin'])->group(function () {
         Route::post('/store', 'App\Http\Controllers\Admin\NewsController@store')->name('news.store');
         Route::get('/{id}/edit', 'App\Http\Controllers\Admin\NewsController@edit')->name('news.edit');
         Route::post('update', 'App\Http\Controllers\Admin\NewsController@update')->name('news.update');
+        Route::post('/{id}/toggle-featured', 'App\Http\Controllers\Admin\NewsController@toggleFeatured')->name('news.toggle-featured');
         Route::get('/{id}/delete', 'App\Http\Controllers\Admin\NewsController@delete')->name('news.delete');
     });
     Route::group(['prefix' => 'home-page'], function () {

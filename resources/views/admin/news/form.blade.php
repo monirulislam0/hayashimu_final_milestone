@@ -161,7 +161,16 @@
                 @enderror
             </div>
         </div>
-        <div class="col-12">
+        <div class="col-md-6">
+            <div class="form-group">
+                <div class="checkbox">
+                    <input type="checkbox" class="checkbox-input" id="is_featured"
+                           name="is_featured" {{ (isset($news->is_featured) && $news->is_featured) ? 'checked': '' }}>
+                    <label for="is_featured">Featured News</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
             <div class="form-group">
                 <div class="checkbox">
                     <input type="checkbox" class="checkbox-input" id="status"
