@@ -209,4 +209,16 @@ class FrontendController extends BaseController
         
         return view('page', compact('page'));
     }
+    
+    public function companyProfile()
+    {
+        $this->setPageTitle(config('settings.site_title'), 'Company Profile');
+        return view('company-profile');
+    }
+    
+    public function certification()
+    {
+        $this->setPageTitle(config('settings.site_title'), 'Certification');
+        return view('certification');
+    }
 }

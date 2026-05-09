@@ -5,7 +5,7 @@
             min-height: 100vh;
         }
         .page-container {
-            max-width: 900px;
+            max-width: 90%;
             margin: 0 auto;
             padding: 80px 20px;
         }
@@ -44,15 +44,82 @@
         .breadcrumb-item a:hover {
             color: #0fa84a !important;
         }
+        
+        /* Enhanced responsive design */
+        @media (max-width: 1200px) {
+            .page-container {
+                max-width: 95%;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .page-container {
+                max-width: 98%;
+                padding: 70px 15px;
+            }
+            .page-content {
+                padding: 35px 25px;
+            }
+        }
+        
         @media (max-width: 768px) {
             .page-container {
-                padding: 60px 15px;
+                max-width: 100%;
+                padding: 50px 10px;
             }
             .page-title {
                 font-size: 2rem;
+                margin-bottom: 15px;
             }
             .page-content {
-                padding: 25px 20px;
+                padding: 25px 15px;
+                margin-top: 15px;
+            }
+            .breadcrumb {
+                padding: 12px 15px;
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .page-container {
+                padding: 40px 8px;
+            }
+            .page-title {
+                font-size: 1.75rem;
+                margin-bottom: 12px;
+            }
+            .page-content {
+                padding: 20px 12px;
+                margin-top: 12px;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            .breadcrumb {
+                padding: 10px 12px;
+                margin-bottom: 25px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .page-container {
+                padding: 30px 5px;
+            }
+            .page-title {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            .page-content {
+                padding: 15px 10px;
+                margin-top: 10px;
+                font-size: 13px;
+                line-height: 1.5;
+            }
+            .breadcrumb {
+                padding: 8px 10px;
+                margin-bottom: 20px;
+                font-size: 13px;
             }
         }
     </style>

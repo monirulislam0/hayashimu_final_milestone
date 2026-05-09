@@ -141,6 +141,29 @@
         display: inline-block;
     }
     
+    /* Top Selling Section Standard Design */
+    .top-selling-section {
+        background: #ffffff !important;
+        border-top: 1px solid #e9ecef !important;
+        border-bottom: 1px solid #e9ecef !important;
+        margin: 0 !important;
+        padding: 60px 0 !important;
+    }
+    
+    /* Ensure no gaps between sections */
+    .top-selling-section + *,
+    .top-selling-section ~ section,
+    .top-selling-section ~ .livewire {
+        margin-top: 0 !important;
+        border-top: 1px solid #e9ecef !important;
+    }
+    
+    /* Clean section transitions */
+    .top-selling-section::before,
+    .top-selling-section::after {
+        display: none !important;
+    }
+
     /* Responsive adjustments */
     @media (max-width: 768px) {
         .product-card {
@@ -164,6 +187,10 @@
         .partner-logo-wrapper {
             width: 100px;
             height: 100px;
+        }
+        
+        .top-selling-section {
+            padding: 40px 0 !important;
         }
     }
     
@@ -216,6 +243,92 @@
                 </div>
                 <livewire:inc.categories></livewire:inc.categories>
             </div>
+        </div>
+        
+                
+       
+        
+        <livewire:inc.why-choose :page_type="$page_type"></livewire:inc.why-choose>
+         <!-- Top Selling Products Section -->
+        @if($featuredProducts->count() > 0)
+        <section class="top-selling-section py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold mb-3">Top Selling Products</h2>
+                    <p class="text-muted">Discover our most popular and recommended products</p>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    @forelse($featuredProducts as $product)
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="product-card h-100">
+                            <div class="product-image-container">
+                                <a href="{{ route('frontend.product.detail', $product->slug) }}">
+                                    <img src="{{ asset('storage/' . $product->image) }}" 
+                                         alt="{{ $product->name }}" 
+                                         class="img-fluid w-100" 
+                                         style="height: 200px; object-fit: cover;">
+                                </a>
+                                @if($product->discount > 0)
+                                <div class="discount-badge">
+                                    -{{ $product->discount }}%
+                                </div>
+                                @endif
+                            </div>
+                            <div class="product-info p-3">
+                                <h6 class="product-title mb-2">
+                                    <a href="{{ route('frontend.product.detail', $product->slug) }}" 
+                                       class="text-decoration-none text-dark">
+                                        {{ Str::limit($product->name, 30) }}
+                                    </a>
+                                </h6>
+                                <div class="price-info mb-2">
+                                    @if($product->discount > 0)
+                                        <span class="text-muted text-decoration-line-through">
+                                            ${{ number_format($product->price, 2) }}
+                                        </span>
+                                        <span class="text-danger fw-bold ms-2">
+                                            ${{ number_format($product->price - ($product->price * $product->discount / 100), 2) }}
+                                        </span>
+                                    @else
+                                        <span class="text-primary fw-bold">
+                                            ${{ number_format($product->price, 2) }}
+                                        </span>
+                                    @endif
+                                </div>
+                                <div class="product-meta">
+                                    <small class="text-muted">
+                                        @if($product->brand)
+                                            <i class="fa-solid fa-tag me-1"></i>{{ $product->brand }}
+                                        @endif
+                                        @if($product->model)
+                                            <span class="ms-2"><i class="fa-solid fa-cube me-1"></i>{{ $product->model }}</span>
+                                        @endif
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @empty
+                    <div class="col-12 text-center">
+                        <p class="text-muted">No featured products available at the moment.</p>
+                    </div>
+                    @endforelse
+                </div>
+                
+                <!-- Explore More Button -->
+                <div class="text-center">
+                    <a href="{{ route('frontend.products.all') }}" 
+                       class="btn btn-primary btn-lg px-5 py-3">
+                        <i class="fa-solid fa-shopping-bag me-2"></i>
+                        Explore More
+                    </a>
+                </div>
+            </div>
+        </section>
+        @endif
+        <div class="details-section">
+            <livewire:inc.view-more></livewire:inc.view-more>
         </div>
         
         <!-- Featured News Section -->
@@ -299,91 +412,7 @@
         </div>
         @endif
         
-        <!-- Top Selling Products Section -->
-        @if($featuredProducts->count() > 0)
-        <div class="top-selling-section bg-white py-5">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bold mb-3">Top Selling</h2>
-                    <p class="text-muted">Discover our most popular and recommended products</p>
-                </div>
-                
-                <div class="row g-4 mb-5">
-                    @forelse($featuredProducts as $product)
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="product-card h-100">
-                            <div class="product-image-container">
-                                <a href="{{ route('frontend.product.detail', $product->slug) }}">
-                                    <img src="{{ asset('storage/' . $product->image) }}" 
-                                         alt="{{ $product->name }}" 
-                                         class="img-fluid w-100" 
-                                         style="height: 200px; object-fit: cover;">
-                                </a>
-                                @if($product->discount > 0)
-                                <div class="discount-badge">
-                                    -{{ $product->discount }}%
-                                </div>
-                                @endif
-                            </div>
-                            <div class="product-info p-3">
-                                <h6 class="product-title mb-2">
-                                    <a href="{{ route('frontend.product.detail', $product->slug) }}" 
-                                       class="text-decoration-none text-dark">
-                                        {{ Str::limit($product->name, 30) }}
-                                    </a>
-                                </h6>
-                                <div class="price-info mb-2">
-                                    @if($product->discount > 0)
-                                        <span class="text-muted text-decoration-line-through">
-                                            ${{ number_format($product->price, 2) }}
-                                        </span>
-                                        <span class="text-danger fw-bold ms-2">
-                                            ${{ number_format($product->price - ($product->price * $product->discount / 100), 2) }}
-                                        </span>
-                                    @else
-                                        <span class="text-primary fw-bold">
-                                            ${{ number_format($product->price, 2) }}
-                                        </span>
-                                    @endif
-                                </div>
-                                <div class="product-meta">
-                                    <small class="text-muted">
-                                        @if($product->brand)
-                                            <i class="fa-solid fa-tag me-1"></i>{{ $product->brand }}
-                                        @endif
-                                        @if($product->model)
-                                            <span class="ms-2"><i class="fa-solid fa-cube me-1"></i>{{ $product->model }}</span>
-                                        @endif
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @empty
-                    <div class="col-12 text-center">
-                        <p class="text-muted">No featured products available at the moment.</p>
-                    </div>
-                    @endforelse
-                </div>
-                
-                <!-- Explore More Button -->
-                <div class="text-center">
-                    <a href="{{ route('frontend.products.all') }}" 
-                       class="btn btn-primary btn-lg px-5 py-3">
-                        <i class="fa-solid fa-shopping-bag me-2"></i>
-                        Explore More
-                    </a>
-                </div>
-            </div>
-        </div>
-        @endif
-        
-        <livewire:inc.why-choose :page_type="$page_type"></livewire:inc.why-choose>
-        <div class="details-section">
-            <livewire:inc.view-more></livewire:inc.view-more>
-        </div>
-    </main>
-<!-- Our Partners Section -->
+        <!-- Our Partners Section -->
         @if($partnerSliders->count() > 0)
         <div class="our-partners-section py-5 bg-light">
             <div class="container">
@@ -422,7 +451,6 @@
             </div>
         </div>
         @endif
-        
     </main>
 </x-app-layout>
 
@@ -433,7 +461,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (slider) {
         let currentPosition = 0;
         let slideWidth = 230; // Width of each slide including margin
-        let visibleSlides = Math.floor(slider.parentElement.offsetWidth / slideWidth);
+        let visibleSlides = 4; // Show 4 items at a time
         let totalSlides = slider.children.length;
         let autoPlayInterval;
         
@@ -441,9 +469,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const maxPosition = -(totalSlides - visibleSlides) * slideWidth;
             
             if (direction === 'next') {
-                currentPosition = Math.max(currentPosition - slideWidth, maxPosition);
+                currentPosition = Math.max(currentPosition - (slideWidth * 4), maxPosition);
             } else {
-                currentPosition = Math.min(currentPosition + slideWidth, 0);
+                currentPosition = Math.min(currentPosition + (slideWidth * 4), 0);
             }
             
             slider.style.transform = `translateX(${currentPosition}px)`;

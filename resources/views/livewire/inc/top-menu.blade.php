@@ -48,67 +48,40 @@
                                 </div>
                             </li>
                             <li class="nav-item main-nav">
-                                <a class="nav-link nav-link-names" href="{{ route('frontend.about') }}">About Us</a>
+                                <div class="d-flex justify-content-between h-md-100">
+                                     <a class="nav-link nav-link-names" href="{{ url('/page/about-us') }}">About Us</a>
+                                 
+                                    <button class="btn btn-outline-none d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAbout" aria-controls="navbarNavAbout" aria-expanded="false" aria-label="Toggle navigation navbarNavAbout">
+                                        <i class="fa-solid fa-caret-down fs-4 fa-caret-down-navbar" style="color: #fff; margin-top: -4px;"></i>
+                                    </button>
+                                </div>
+
+                                <div class="submenu navbar-nav" id="navbarNavAbout">
+                                    <ul>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ url('/page/about-us') }}">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ url('/page/company-profile') }}">Company Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ url('/page/certification') }}">Certification</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.faq') }}">FAQ</a>
                             </li>
                             <li class="nav-item main-nav">
                                  <div class="d-flex justify-content-between h-md-100">
-                                     <a class="nav-link nav-link-names" href="#">Pages</a>
-                                 
-                                    <button class="btn btn-outline-none d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSubPages" aria-controls="navbarNavSubPages" aria-expanded="false" aria-label="Toggle navigation navbarNavSubPages">
-                                        <i class="fa-solid fa-caret-down fs-4 fa-caret-down-navbar" style="color: #fff; margin-top: -4px;"></i>
-                                    </button>
-                                </div>
-
-                                <div class="submenu navbar-nav" id="navbarNavSubPages">
-                                    <ul>
-                                        @php
-                                            $pages = \App\Models\Page::active()->ordered()->get();
-                                        @endphp
-                                        @foreach($pages as $page)
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('frontend.page', $page->slug) }}">{{ $page->title }}</a>
-                                        </li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            </li>
-                            {{-- <li class="nav-item main-nav">
-                                <a class="nav-link nav-link-names" href="{{ route('frontend.service') }}">Service</a>
-                            </li> --}}
-                            <li class="nav-item main-nav">
-                                
-                                 <div class="d-flex justify-content-between h-md-100">
-                                     <a class="nav-link nav-link-names" href="#">News</a>
+                                     <a class="nav-link nav-link-names" href="{{ route('frontend.news.feed') }}">News</a>
                                  
                                     <button class="btn btn-outline-none d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSub2" aria-controls="navbarNavSub2" aria-expanded="false" aria-label="Toggle navigation navbarNavSub2">
                                         <i class="fa-solid fa-caret-down fs-4 fa-caret-down-navbar" style="color: #fff;"></i>
                                     </button>
                                 </div>
-                                <div class="submenu navbar-nav" id="navbarNavSub2">
-                                    <ul>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('frontend.news.feed') }}">News Feed</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('frontend.news','new-products') }}">New Products</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " href="{{ route('frontend.news','exhibition-news') }}">Exhibition News</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " href="{{ route('frontend.news','industry-news') }}">Industry News</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " href="{{ route('frontend.news','company-news') }}">Company News</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item main-nav">
-                                <a class="nav-link nav-link-names" href="{{ route('frontend.news','certification') }}">Certification</a>
+
                             </li>
                             <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.contact') }}">Contact Us</a>
