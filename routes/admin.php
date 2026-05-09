@@ -35,6 +35,15 @@ Route::middleware(['auth:admin'])->group(function () {
         Route::get('/{id}/delete', 'App\Http\Controllers\Admin\SliderController@delete')->name('sliders.delete');
     });
 
+    Route::group(['prefix' => 'partner-sliders'], function () {
+        Route::get('/', 'App\Http\Controllers\Admin\PartnerSliderController@index')->name('partner-sliders.index');
+        Route::get('/create', 'App\Http\Controllers\Admin\PartnerSliderController@create')->name('partner-sliders.create');
+        Route::post('/store', 'App\Http\Controllers\Admin\PartnerSliderController@store')->name('partner-sliders.store');
+        Route::get('/{id}/edit', 'App\Http\Controllers\Admin\PartnerSliderController@edit')->name('partner-sliders.edit');
+        Route::post('update', 'App\Http\Controllers\Admin\PartnerSliderController@update')->name('partner-sliders.update');
+        Route::get('/{id}/delete', 'App\Http\Controllers\Admin\PartnerSliderController@delete')->name('partner-sliders.delete');
+    });
+
     Route::group(['prefix' => 'products'], function () {
         Route::get('/', 'App\Http\Controllers\Admin\ProductController@index')->name('products.index');
         Route::get('/create', 'App\Http\Controllers\Admin\ProductController@create')->name('products.create');

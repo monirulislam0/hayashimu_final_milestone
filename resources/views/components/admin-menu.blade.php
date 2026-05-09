@@ -43,6 +43,8 @@
                 </li>
                 <li class=" nav-item"><a href="{{ route('admin.sliders.index') }}"><i class="bx bx-album"></i><span class="menu-title" data-i18n="slider">Slider</span></a>
                 </li>
+                <li class=" nav-item"><a href="{{ route('admin.partner-sliders.index') }}"><i class="bx bx-images"></i><span class="menu-title" data-i18n="partner-slider">Partner Slider</span></a>
+                </li>
                 <li class=" nav-item"><a href="{{ route('admin.products.index') }}"><i class="bx bx-check-square"></i><span class="menu-title" data-i18n="menu">Products</span></a>
                 </li>
                 <li class=" nav-item"><a href="{{ route('admin.news.index') }}"><i class="bx bx-film"></i><span class="menu-title" data-i18n="news">News</span></a>

@@ -9,6 +9,7 @@ use App\Models\News;
 use App\Models\Order;
 use App\Models\Page;
 use App\Models\Product;
+use App\Models\PartnerSlider;
 use App\Models\StaticPage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -37,7 +38,10 @@ class FrontendController extends BaseController
             ->take(12)
             ->get();
         
-        return view('home',compact('page_type', 'featuredNews', 'featuredProducts'));
+        // Get active partner sliders
+        $partnerSliders = PartnerSlider::active()->ordered()->get();
+        
+        return view('home',compact('page_type', 'featuredNews', 'featuredProducts', 'partnerSliders'));
     }
     
 

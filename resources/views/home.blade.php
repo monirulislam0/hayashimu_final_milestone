@@ -51,6 +51,96 @@
         opacity: 0.8;
     }
     
+    /* Our Partners Section Styles */
+    .our-partners-section {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    }
+    
+    .partners-carousel {
+        position: relative;
+        overflow: hidden;
+        padding: 20px 0;
+    }
+    
+    .partners-slider {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .partner-slide {
+        flex: 0 0 auto;
+        margin: 0 15px;
+    }
+    
+    .partner-item {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        transition: all 0.3s ease;
+        min-width: 200px;
+        max-width: 200px;
+    }
+    
+    .partner-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+    
+    .partner-logo-wrapper {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 10px;
+    }
+    
+    .partner-logo {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
+    
+    .partner-item:hover .partner-logo {
+        filter: grayscale(0%);
+    }
+    
+    .partner-placeholder {
+        color: #6c757d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .partner-info {
+        margin-top: 15px;
+    }
+    
+    .partner-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 8px;
+    }
+    
+    .partner-link-label {
+        font-size: 14px;
+        color: #007bff;
+        background: #e3f2fd;
+        padding: 4px 12px;
+        border-radius: 20px;
+        display: inline-block;
+    }
+    
     /* Responsive adjustments */
     @media (max-width: 768px) {
         .product-card {
@@ -59,6 +149,21 @@
         
         .product-image-container img {
             height: 150px !important;
+        }
+        
+        .partner-slide {
+            margin: 0 10px;
+        }
+        
+        .partner-item {
+            min-width: 160px;
+            max-width: 160px;
+            padding: 15px;
+        }
+        
+        .partner-logo-wrapper {
+            width: 100px;
+            height: 100px;
         }
     }
     
@@ -73,6 +178,30 @@
         
         .price-info {
             font-size: 14px;
+        }
+        
+        .partner-slide {
+            margin: 0 8px;
+        }
+        
+        .partner-item {
+            min-width: 140px;
+            max-width: 140px;
+            padding: 12px;
+        }
+        
+        .partner-logo-wrapper {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .partner-title {
+            font-size: 14px;
+        }
+        
+        .partner-link-label {
+            font-size: 12px;
+            padding: 3px 8px;
         }
     }
     </style>
@@ -254,4 +383,207 @@
             <livewire:inc.view-more></livewire:inc.view-more>
         </div>
     </main>
+<!-- Our Partners Section -->
+        @if($partnerSliders->count() > 0)
+        <div class="our-partners-section py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold mb-3">Our Partners</h2>
+                    <p class="text-muted">Trusted by leading companies worldwide</p>
+                </div>
+                
+                <div class="partners-carousel">
+                    <div class="partners-slider">
+                        @foreach($partnerSliders as $partner)
+                        <div class="partner-slide">
+                            <div class="partner-item">
+                                <a href="{{ $partner->link }}" target="_blank" class="text-decoration-none">
+                                    <div class="partner-logo-wrapper">
+                                        @if($partner->logo)
+                                            <img src="{{ asset('storage/' . $partner->logo) }}" 
+                                                 alt="{{ $partner->title }}" 
+                                                 class="partner-logo">
+                                        @else
+                                            <div class="partner-placeholder">
+                                                <i class="fa-solid fa-building fa-2x"></i>
+                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="partner-info">
+                                        <h6 class="partner-title">{{ $partner->title }}</h6>
+                                        <span class="partner-link-label">{{ $partner->link_label }}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+        @endif
+        
+    </main>
 </x-app-layout>
+
+<!-- Partner Slider JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.partners-slider');
+    if (slider) {
+        let currentPosition = 0;
+        let slideWidth = 230; // Width of each slide including margin
+        let visibleSlides = Math.floor(slider.parentElement.offsetWidth / slideWidth);
+        let totalSlides = slider.children.length;
+        let autoPlayInterval;
+        
+        function moveSlider(direction) {
+            const maxPosition = -(totalSlides - visibleSlides) * slideWidth;
+            
+            if (direction === 'next') {
+                currentPosition = Math.max(currentPosition - slideWidth, maxPosition);
+            } else {
+                currentPosition = Math.min(currentPosition + slideWidth, 0);
+            }
+            
+            slider.style.transform = `translateX(${currentPosition}px)`;
+        }
+        
+        function startAutoPlay() {
+            autoPlayInterval = setInterval(() => {
+                if (currentPosition <= -(totalSlides - visibleSlides) * slideWidth) {
+                    currentPosition = 0;
+                } else {
+                    moveSlider('next');
+                }
+            }, 3000); // Change slide every 3 seconds
+        }
+        
+        function stopAutoPlay() {
+            clearInterval(autoPlayInterval);
+        }
+        
+        // Navigation buttons
+        const carousel = document.querySelector('.partners-carousel');
+        const prevBtn = document.createElement('button');
+        const nextBtn = document.createElement('button');
+        
+        prevBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+        nextBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+        
+        prevBtn.className = 'partner-nav-btn partner-prev';
+        nextBtn.className = 'partner-nav-btn partner-next';
+        
+        carousel.appendChild(prevBtn);
+        carousel.appendChild(nextBtn);
+        
+        prevBtn.addEventListener('click', () => {
+            moveSlider('prev');
+            stopAutoPlay();
+            startAutoPlay();
+        });
+        
+        nextBtn.addEventListener('click', () => {
+            moveSlider('next');
+            stopAutoPlay();
+            startAutoPlay();
+        });
+        
+        // Touch support for mobile
+        let startX = 0;
+        let isDragging = false;
+        
+        slider.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+            stopAutoPlay();
+        });
+        
+        slider.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+            const currentX = e.touches[0].clientX;
+            const diffX = startX - currentX;
+            
+            if (Math.abs(diffX) > 50) {
+                if (diffX > 0) {
+                    moveSlider('next');
+                } else {
+                    moveSlider('prev');
+                }
+                isDragging = false;
+                startAutoPlay();
+            }
+        });
+        
+        slider.addEventListener('touchend', () => {
+            isDragging = false;
+            startAutoPlay();
+        });
+        
+        // Start autoplay
+        startAutoPlay();
+        
+        // Pause on hover
+        carousel.addEventListener('mouseenter', stopAutoPlay);
+        carousel.addEventListener('mouseleave', startAutoPlay);
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            visibleSlides = Math.floor(slider.parentElement.offsetWidth / slideWidth);
+            currentPosition = 0;
+            slider.style.transform = `translateX(0px)`;
+        });
+    }
+});
+</script>
+
+<style>
+.partner-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007bff;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+}
+
+.partner-nav-btn:hover {
+    background: #0056b3;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.partner-prev {
+    left: 10px;
+}
+
+.partner-next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .partner-nav-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+    }
+    
+    .partner-prev {
+        left: 5px;
+    }
+    
+    .partner-next {
+        right: 5px;
+    }
+}
+</style>
