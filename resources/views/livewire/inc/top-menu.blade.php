@@ -90,6 +90,9 @@
                                 <div class="submenu navbar-nav" id="navbarNavSub2">
                                     <ul>
                                         <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('frontend.news.feed') }}">News Feed</a>
+                                        </li>
+                                        <li class="nav-item">
                                             <a class="nav-link" href="{{ route('frontend.news','new-products') }}">New Products</a>
                                         </li>
                                         <li class="nav-item">

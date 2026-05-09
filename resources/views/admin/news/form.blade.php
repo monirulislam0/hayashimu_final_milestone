@@ -130,6 +130,39 @@
         </div>
         <div class="col-12">
             <div class="form-group">
+                <label for="meta_title">Meta Title</label>
+                <input type="text" id="meta_title"
+                       class="form-control @error('meta_title') is-invalid @enderror"
+                       name="meta_title" value="{{ old('meta_title',(isset($news->meta_title)) ? $news->meta_title: '' )}}" placeholder="Enter meta title">
+                @error('meta_title')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
+                <label for="meta_description">Meta Description</label>
+                <textarea class="form-control @error('meta_description') is-invalid @enderror" name="meta_description" id="meta_description" rows="3">
+                    {{ old('meta_description',(isset($news->meta_description)) ? $news->meta_description: '' )}}
+                </textarea>
+                @error('meta_description')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
+                <label for="meta_keywords">Meta Keywords</label>
+                <input type="text" id="meta_keywords"
+                       class="form-control @error('meta_keywords') is-invalid @enderror"
+                       name="meta_keywords" value="{{ old('meta_keywords',(isset($news->meta_keywords)) ? $news->meta_keywords: '' )}}" placeholder="Enter meta keywords">
+                @error('meta_keywords')
+                <span class="text-danger">{{ $message }}</span>
+                @enderror
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
                 <div class="checkbox">
                     <input type="checkbox" class="checkbox-input" id="status"
                            name="status" {{ (isset($news->status) && $news->status) ? 'checked': '' }}>

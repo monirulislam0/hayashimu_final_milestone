@@ -106,6 +106,16 @@ class FrontendController extends BaseController
         return view('news-detail',compact('data','type'));
 
     }
+
+    public function newsFeed()
+    {
+        $news = News::where('status', 1)
+            ->orderBy('created_at', 'desc')
+            ->paginate(12); // Show 12 news items per page
+        
+        $this->setPageTitle(config('settings.site_title'), 'News Feed');
+        return view('news-feed', compact('news'));
+    }
     public function cart(){
         $cart =  \Cart::getContent()->count();
         if($cart<=0){

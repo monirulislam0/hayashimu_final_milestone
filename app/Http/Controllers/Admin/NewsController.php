@@ -31,7 +31,10 @@ class NewsController extends BaseController
         $this->validate($request,[
             'title' => 'required|max:255|unique:news',
             'news_type' => 'required',
-            'image'     => 'mimes:jpg,jpeg,png,webp|max:5000'
+            'image'     => 'mimes:jpg,jpeg,png,webp|max:5000',
+            'meta_title' => 'nullable|max:255',
+            'meta_description' => 'nullable|max:500',
+            'meta_keywords' => 'nullable|max:255'
         ]);
 
         $params = $request->except('_token');
@@ -58,7 +61,10 @@ class NewsController extends BaseController
         $this->validate($request,[
             'title' => 'required|max:255',
             'news_type' => 'required',
-            'image'     => 'mimes:jpg,jpeg,png,webp|max:5000'
+            'image'     => 'mimes:jpg,jpeg,png,webp|max:5000',
+            'meta_title' => 'nullable|max:255',
+            'meta_description' => 'nullable|max:500',
+            'meta_keywords' => 'nullable|max:255'
         ]);
 
         $params = $request->except('_token');

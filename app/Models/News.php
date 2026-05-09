@@ -12,7 +12,7 @@ class News extends Model
     use HasFactory;
 
     protected $table = 'news';
-    protected $fillable = ['title','news_type','image','short','detail','published_date','author','origin','sorting','status'];
+    protected $fillable = ['title','news_type','image','short','detail','published_date','author','origin','sorting','status','meta_title','meta_description','meta_keywords'];
 
     public function setTitleAttribute($value)
     {

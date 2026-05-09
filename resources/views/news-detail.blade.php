@@ -1,4 +1,15 @@
 <x-app-layout>
+    @section('meta')
+        @if($data->meta_title)
+            <title>{{ $data->meta_title }}</title>
+        @endif
+        @if($data->meta_description)
+            <meta name="description" content="{{ $data->meta_description }}">
+        @endif
+        @if($data->meta_keywords)
+            <meta name="keywords" content="{{ $data->meta_keywords }}">
+        @endif
+    @endsection
     <main >
         <div>
             <img src="{{ asset('frontend/images/News.webp') }}" alt="..." class="img-fluid">

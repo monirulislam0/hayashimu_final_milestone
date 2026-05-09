@@ -21,6 +21,7 @@ Route::get('/about-us', [FrontendController::class, 'aboutUs'])->name('frontend.
 Route::get('/certification', [FrontendController::class, 'certification'])->name('frontend.certification');
 Route::get('/service', [FrontendController::class, 'service'])->name('frontend.service');
 Route::get('/contact', [FrontendController::class, 'contactUs'])->name('frontend.contact');
+Route::get('/news-feed', [FrontendController::class, 'newsFeed'])->name('frontend.news.feed');
 Route::get('/news/{type}', [FrontendController::class, 'news'])->name('frontend.news');
 Route::get('/news/{type}/{slug}', [FrontendController::class, 'newsDetail'])->name('frontend.news.detail');
 Route::get('/product-center', [FrontendController::class, 'productCenter'])->name('frontend.product.center');
