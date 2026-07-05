@@ -3,9 +3,9 @@
         <div class="py-5 container innerpage-container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('frontend.home') }}">Home</a></li>
-                    <li class="breadcrumb-item"><a href="{{ route('frontend.product.center') }}">Products Center</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Detail</li>
+                    <li class="breadcrumb-item"><a href="{{ route('frontend.home') }}" class="text-black">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{{ route('frontend.product.center') }}" class="text-black">Products Center</a></li>
+                    <li class="breadcrumb-item active text-black" aria-current="page" style="color:black !important">Detail</li>
                 </ol>
             </nav>
             <div class="row">
