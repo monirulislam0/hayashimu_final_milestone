@@ -1,12 +1,13 @@
 @if($page_type=='home')
-    <div>
+    <div style="background-color: #fff">
         @if(!empty($data))
-            <style>
+            {{-- <style>
                 #background_image{
                     background-image: url("{{ asset('storage/'.$data['bg_image']) }}");
                 }
-            </style>
-            <div class="choose-us" id="background_image">
+            </style> --}}
+            {{-- <div class="choose-us" id="background_image"> --}}
+            <div class="choose-us" style="background-color: #22A1A7">
                 <div >
                     <div class="row">
                         <div class="col-md-6 d-flex flex-column">
@@ -35,7 +36,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        {{-- <div class="col-md-6 d-flex justify-content-center align-items-center">
                             <div class="circle-bg">
                                 <div>
                                     <a hre="#" data-bs-toggle="modal" data-bs-target="#videoModal"><i class="fa-solid fa-circle-play circle-icon"></i></a>
@@ -46,7 +47,7 @@
                                 <div class="dot-four dots" data-bs-toggle="modal" data-bs-target="#videoModal"></div>
                             </div>
 
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

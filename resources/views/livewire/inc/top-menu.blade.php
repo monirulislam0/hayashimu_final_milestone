@@ -123,27 +123,27 @@
                 
                 <div class="d-none d-lg-flex">
                     <a href="//{{ config('settings.social_facebook') }}" target="_blank">
-                        <i class="fa-brands fa-facebook fs-4" style="color: #fff;"></i>
+                        <i class="fa-brands fa-facebook fs-4" style="color: #000;"></i>
                     </a>
                 </div>
                  <div class="d-none d-lg-flex">
                      <a href="//{{ config('settings.social_youtube') }}" target="_blank">
-                       <i class="fa-brands fa-youtube fs-4" style="color: #fff;"></i>
+                       <i class="fa-brands fa-youtube fs-4" style="color: #000;"></i>
                     </a>
                 </div>
                 <div class="d-none d-lg-flex">
                      <a href="//{{ config('settings.social_instagram') }}" target="_blank">
-                       <i class="fa-brands fa-instagram fs-4" style="color: #fff;"></i>
+                       <i class="fa-brands fa-instagram fs-4" style="color: #000;"></i>
                     </a>
                 </div>
                  <div class="d-none d-lg-flex">
                      <a href="//{{ config('settings.social_linkedin') }}" target="_blank">
-                       <i class="fab fa-linkedin fs-4" style="color: #fff;"></i>
+                       <i class="fab fa-linkedin fs-4" style="color: #000;"></i>
                     </a>
                 </div>
                 <div class="d-flex d-md-none">
                    <button class="btn btn-outline-none" id="navbarMenu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars fs-4" style="color: #fff;"></i>
+                        <i class="fa-solid fa-bars fs-4" style="color: #000;"></i>
                    </button>
                 </div>
             </div>
