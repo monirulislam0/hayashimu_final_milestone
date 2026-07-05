@@ -1,5 +1,5 @@
 <x-app-layout>
-    <main>
+    <main style="background-color: #fff;">
         <div class="py-5 container innerpage-container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
