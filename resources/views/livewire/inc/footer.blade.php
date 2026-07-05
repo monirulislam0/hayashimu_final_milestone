@@ -5,9 +5,11 @@
                 <div class="row">
                     <div class="col-md-7">
                         <div class="row " id="unset-width">
+                            
                             {!! $footerContent?->content !!}
+
                             <div class="col-md-6 mt-2">
-                                <div class="fs-4" style="color: #FEA620;">
+                                <div class="fs-4" style="color: #000;">
                                     CONTACT US
                                 </div>
                                 <ul class="d-flex flex-column gap-3">
@@ -27,7 +29,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 mt-5">
-                        <div class="fs-4" style="color: #FEA620;">
+                        <div class="fs-4" style="color: #000;">
                             GET IN TOUCH
                         </div>
                         <div class="details-form">

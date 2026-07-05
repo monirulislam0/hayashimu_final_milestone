@@ -1,7 +1,7 @@
 
 <x-app-layout>
 
-    <main>
+    <main >
         <div class="py-5 container innerpage-container">
             <livewire:products.breadcrumb :category_name="$category->name"></livewire:products.breadcrumb>
             <div class="row">

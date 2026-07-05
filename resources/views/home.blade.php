@@ -233,7 +233,7 @@
         }
     </style>
 
-    <main>
+    <main style="background-color: #fff;">
         <livewire:inc.slider></livewire:inc.slider>
         <div class="main-body" style="background-color: #fff; padding: 40px 0;">
 
@@ -327,6 +327,7 @@
                 </div>
             </section>
         @endif
+        
         <div class="details-section">
             <livewire:inc.view-more></livewire:inc.view-more>
         </div>

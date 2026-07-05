@@ -424,7 +424,7 @@ main {
 }
 
 .details-section {
-  background-color: #fea620;
+  background-color: #22A1A7;
   width: 100%;
   padding: 90px 0;
   text-align: center;
@@ -457,7 +457,7 @@ main {
 
 .view-btn {
   background-color: #fff;
-  color: #fea620;
+  color: #000;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -1482,7 +1482,7 @@ i.fa-circle-play.fa-solid {
 }
 
 .btn-primary:hover {
-  background: #d18716 !important;
+  background: #5f5f5f !important;
 }
 
 .modal-close-btn {
