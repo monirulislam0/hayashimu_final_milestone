@@ -36,6 +36,10 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="col-md-6 d-flex justify-content-center align-items-center">
+                            <img src="{{ asset('assets/images/cycle.png') }}" alt="Why Choose Us" class="img-fluid" style="max-width: 100%; height: auto;">
+                        </div>
                         {{-- <div class="col-md-6 d-flex justify-content-center align-items-center">
                             <div class="circle-bg">
                                 <div>
