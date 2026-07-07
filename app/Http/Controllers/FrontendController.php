@@ -73,7 +73,9 @@ class FrontendController extends BaseController
     }
    
     public function products(){
+
          $this->setPageTitle(config('settings.site_title'),'Products');
+         
         return view('all');
     }
     

@@ -1,5 +1,5 @@
 <div>
-    <footer>
+    {{-- <footer>
         <div class="footer-ctrl">
             <div class="container footer-ctrl-container">
                 <div class="row">
@@ -64,5 +64,124 @@
                 Copyright ©&nbsp;2011&nbsp;{{ config('settings.footer_copyright_text') }}
             </div>
         </div>
+    </footer> --}}
+
+    <!-- Secondary Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Related Companies -->
+                <div class="col-12 col-md-4">
+                    <h5>Related Companies</h5>
+                    <ul>
+                        <li><a href="#">Company 1</a></li>
+                        <li><a href="#">Company 2</a></li>
+                        <li><a href="#">Company 3</a></li>
+                    </ul>
+                </div>
+
+                <!-- Product -->
+                <div class="col-12 col-md-4 footer-col">
+                    <h5>Product</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="{{ route('frontend.product.center') }}">All Products</a></li>
+                                <li><a href="{{ route('frontend.home') }}">Featured Products</a></li>
+                                <li><a href="#">Category 1</a></li>
+                                <li><a href="#">Category 2</a></li>
+                                <li><a href="#">Category 3</a></li>
+                                <li><a href="#">Category 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="#">Category 5</a></li>
+                                <li><a href="#">Category 6</a></li>
+                                <li><a href="#">Category 7</a></li>
+                                <li><a href="#">Category 8</a></li>
+                                <li><a href="#">Category 9</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="col-12 col-md-4 footer-col">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li><i class="bi bi-telephone-fill me-2"></i>Tel : {{ config('settings.mobile') }}</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i>E-mail : {{ config('settings.default_email_address') }}</li>
+                        <li><i class="bi bi-whatsapp me-2"></i>WhatsApp : {{ config('settings.whatsapp') ?? 'https://www.linkedin.com/feed/' }}</li>
+                        <li><i class="bi bi-geo-alt-fill me-2"></i>Add : {{ config('settings.address') ?? 'No.1058, Taoyao Village, Lipu Town, Zhuji City, Zhejiang Province, China.' }}</li>
+                    </ul>
+                    <div class="social-icons mt-3">
+                        <a href="//{{ config('settings.social_facebook' , 'https://www.facebook.com/hayashimu.machinery') }}" target="_blank"><i class="fab fa-facebook"></i></a>
+                        {{-- <a href="//{{ config('settings.social_twitter') ?? '#' }}" target="_blank"><i class="fab fa-twitter"></i></a> --}}
+                        <a href="//{{ config('settings.social_linkedin', 'https://www.linkedin.com/feed/') }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="//{{ config('settings.social_youtube', 'https://www.youtube.com/@HayashimuLTD') }}" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="//{{ config('settings.social_instagram', 'https://www.instagram.com/hayashimu.machinery') }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <style>
+        .site-footer {
+            background-color: #CCCECD;
+            color: #000;
+            border-top: 3px solid;
+            border-image: linear-gradient(to right, #b23a2a, #e0a72e) 1;
+            padding: 40px 0 30px;
+        }
+        .site-footer a {
+            color: #000;
+            text-decoration: none;
+        }
+        .site-footer a:hover {
+            color: #e0a72e;
+        }
+        .site-footer h5 {
+            color: #000;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .site-footer ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        .site-footer ul li {
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+        .site-footer .footer-col {
+            border-left: 1px solid rgba(0,0,0,0.15);
+            padding-left: 25px;
+        }
+        @media (max-width: 767.98px) {
+            .site-footer .footer-col {
+                border-left: none;
+                padding-left: 0;
+                margin-top: 30px;
+                border-top: 1px solid rgba(0,0,0,0.15);
+                padding-top: 20px;
+            }
+        }
+        .social-icons a {
+            width: 34px;
+            height: 34px;
+            border-radius: 4px;
+            background-color: rgba(0,0,0,0.1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+        }
+        .social-icons a:hover {
+            background-color: #e0a72e;
+            color: #000;
+        }
+    </style>
 </div>
