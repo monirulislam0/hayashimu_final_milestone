@@ -14,6 +14,59 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     @livewireStyles
+    <style>
+        :root{
+            --primary:#22A1A7;
+            --white:#ffffff;
+            --header-bg:#F5F6F7;
+            --muted:#6b7280;
+            --header-height:64px;
+        }
+
+        /* Base layout */
+        body{background-color:var(--white) !important; color: #111827}
+        .header-fixed{background-color:var(--header-bg) !important; box-shadow: none !important; position: -webkit-sticky; position: sticky; top:0; height:var(--header-height); align-items:center; z-index:9999}
+        /* ensure the page content below the header doesn't get hidden */
+        .header-fixed + * { padding-top: var(--header-height); }
+        .site-footer{background-color:var(--header-bg) !important}
+
+        /* Social icons and lists - inline, minimal */
+        .social-links, .social-links ul { list-style: none !important; padding: 0 !important; margin: 0 !important; display:flex; gap:0.5rem; align-items:center }
+        .social-links li { list-style: none !important }
+        .social-icons a, .social-links a, .product-social-icons a { background-color: transparent !important; color:var(--muted) !important; display:inline-flex; align-items:center; justify-content:center }
+
+        /* Hover rules: if hover changes background to primary, ensure icon/text becomes white for contrast */
+        a:hover, .nav-link:hover, .footer-links a:hover { color: var(--primary) !important }
+        .social-icons a:hover, .product-social-icons a:hover { background-color: var(--primary) !important; color: #fff !important }
+
+        /* Buttons: hover color primary; if hover provides background, text becomes white */
+        .btn:hover, .btn-primary:hover { background-color: var(--primary) !important; border-color: var(--primary) !important; color: #fff !important }
+
+        /* Hero buttons share same look but minimal */
+        .view-btn, .fix-btn { background-color: transparent; border: 2px solid var(--primary); color: var(--primary); padding: 10px 48px; border-radius: 6px }
+        .view-btn:hover, .fix-btn:hover { background-color: var(--primary) !important; color: #fff !important }
+
+        /* Product details hover */
+        .product-details-btn:hover, .product-social-icons a:hover { background-color: var(--primary) !important; color:#fff !important }
+        
+        /* Header social icons: minimal, get teal bg on hover and white icon */
+        .header-fixed .d-none.d-lg-flex a, .header-fixed .d-flex a { padding:6px; border-radius:6px; display:inline-flex; align-items:center; justify-content:center; color: #6b7280 }
+        .header-fixed .d-none.d-lg-flex a:hover, .header-fixed .d-flex a:hover { background-color: var(--primary) !important; color: #fff !important }
+        .header-fixed .d-none.d-lg-flex a i, .header-fixed .d-flex a i { color: inherit !important }
+    </style>
+    <style>
+        a:hover,
+        button:hover,
+        .btn:hover,
+        .nav-link:hover,
+        .dropdown-item:hover,
+        .list-group-item:hover,
+        .page-link:hover,
+        .card:hover {
+            color: #22A1A7 !important;
+            border-color: #22A1A7 !important;
+        }
+    </style>
     {!! config('settings.google_analytics') !!}
 </head>
 <body>

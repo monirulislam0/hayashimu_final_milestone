@@ -11,22 +11,27 @@
 }
 
 body {
-  background-color: #808080;
+  background-color: #ffffff;
   font-family: "Oswald", sans-serif;
+  color: #111827;
 }
 
 .header-fixed {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #CCCECD;
-  width: 100vw;
-  height: 100px;
+  background-color: #F5F6F7;
+  width: 100%;
+  height: var(--header-height);
   z-index: 999999;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  align-items: center;
+  top: 0;
 }
 
 #videoModal {
@@ -38,7 +43,10 @@ body {
 }
 
 .header-logo img {
-  width: 100%;
+  max-height: calc(var(--header-height) - 12px);
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .header-nav {
@@ -52,13 +60,14 @@ body {
 }
 
 .nav-link {
-  color: #000;
+  color: #111827;
   text-transform: uppercase;
-  padding: 0px 22px !important;
+  padding: 0px 18px !important;
+  font-weight:600;
 }
 
 .nav-link:hover {
-  color: #fff;
+  color: #22A1A7;
 }
 
 .submenu,
@@ -117,7 +126,7 @@ body {
 /* Firefox */
 .submenu-second {
   scrollbar-width: auto;
-  scrollbar-color: #fea620 #ffffff;
+  scrollbar-color: #22A1A7 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -130,7 +139,7 @@ body {
 }
 
 .submenu-second::-webkit-scrollbar-thumb {
-  background-color: #fea620;
+  background-color: #22A1A7;
   border-radius: 10px;
   border: 3px solid #ffffff;
 }
@@ -265,7 +274,7 @@ main {
 }
 
 .product-box-images a {
-  color: #333 !important;
+  color: #fff !important;
   text-decoration: none !important;
 }
 
@@ -466,7 +475,7 @@ main {
 .view-btn:hover {
   background-color: #fff;
   background: #fff !important;
-  color: #fea620;
+  color: #22A1A7;
 }
 
 .fix-btn {
@@ -663,7 +672,7 @@ main {
 }
 
 .custom-fs-container {
-  background-color: #fda51f;
+  background-color: #22A1A7;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -675,6 +684,7 @@ main {
   align-items: center;
   display: none;
   cursor: pointer;
+  color: #fff;
 }
 
 video {
@@ -719,7 +729,7 @@ video {
   /*border-top-left-radius: 6px;*/
   /*border-top-right-radius: 6px;*/
   border-radius: 6px;
-  background-color: #fea620;
+  background-color: #fff;
   font-family: "Lato", sans-serif;
 }
 
@@ -1189,7 +1199,7 @@ video {
 }
 
 .carousel-multiple-container {
-  background-color: #fea620;
+  background-color: #fff;
   padding: 40px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -1321,7 +1331,7 @@ video {
 .contact-info-overlay {
   position: absolute;
   right: -12px;
-  background-color: #fda51f;
+  background-color: #22A1A7;
   white-space: nowrap;
   z-index: 999;
   padding: 13px;
@@ -1461,7 +1471,7 @@ i.fa-circle-play.fa-solid {
 
 .fix-btn:hover {
   background-color: #fff !important;
-  color: #fea620;
+  color: #22A1A7;
 }
 
 .fix-btn:hover i.fa-brands.fa-facebook {

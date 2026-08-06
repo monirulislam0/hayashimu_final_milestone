@@ -55,7 +55,18 @@
         .note-editable, .note-toolbar {
           background-color: #fff;
         }
-        
+
+        a:hover,
+        button:hover,
+        .btn:hover,
+        .nav-link:hover,
+        .dropdown-item:hover,
+        .list-group-item:hover,
+        .page-link:hover,
+        .card:hover {
+            color: #22A1A7 !important;
+            border-color: #22A1A7 !important;
+        }
     </style>
 </head>
 <body class="vertical-layout vertical-menu-modern boxicon-layout no-card-shadow 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">

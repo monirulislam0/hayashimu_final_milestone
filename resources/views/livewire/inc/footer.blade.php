@@ -129,10 +129,10 @@
 
     <style>
         .site-footer {
-            background-color: #CCCECD;
+            /* match header background */
+            background-color: #F5F6F7;
             color: #000;
-            border-top: 3px solid;
-            border-image: linear-gradient(to right, #b23a2a, #e0a72e) 1;
+            border-top: 3px solid #22A1A7;
             padding: 40px 0 30px;
         }
         .site-footer a {
@@ -140,7 +140,7 @@
             text-decoration: none;
         }
         .site-footer a:hover {
-            color: #e0a72e;
+            color: #22A1A7;
         }
         .site-footer h5 {
             color: #000;
@@ -172,16 +172,22 @@
         .social-icons a {
             width: 34px;
             height: 34px;
-            border-radius: 4px;
-            background-color: rgba(0,0,0,0.1);
+            border-radius: 6px;
+            background-color: transparent;
+            color: #6b7280;
             display: inline-flex;
             align-items: center;
             justify-content: center;
             margin-right: 8px;
+            transition: all 0.18s ease;
+            border: 1px solid rgba(0,0,0,0.04);
         }
         .social-icons a:hover {
-            background-color: #e0a72e;
-            color: #000;
+            background-color: #22A1A7;
+            color: #fff;
+            border-color: #22A1A7;
         }
+        .social-icons a i { transition: color 0.18s ease }
+        .social-icons a:hover i { color: #fff !important }
     </style>
 </div>
