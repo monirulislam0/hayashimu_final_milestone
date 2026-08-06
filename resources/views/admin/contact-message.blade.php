@@ -22,6 +22,7 @@
                                     <th style="width: 120px;">Mobile</th>
                                     <th style="width: 180px;">Email</th>
                                     <th style="max-width: 300px;">Message</th>
+                                    <th style="width: 180px;">Date & Time</th>
                                     <th style="width: 100px;">Action</th>
                                 </tr>
                                 </thead>
@@ -34,6 +35,7 @@
                                         <td style="max-width: 120px; word-wrap: break-word;">{{ $message->mobile }}</td>
                                         <td style="max-width: 180px; word-wrap: break-word;">{{ $message->email }}</td>
                                         <td style="max-width: 300px; word-wrap: break-word;">{{ Str::limit($message->message, 100) }}</td>
+                                        <td style="max-width: 180px; word-wrap: break-word;">{{ $message->created_at ? $message->created_at->format('jS F, Y, h:i A') : '-' }}</td>
                                         <td>
                                             <div class="d-flex gap-1">
                                                 <a href="{{ route('admin.contact-message.view', $message->id) }}" class="btn btn-sm btn-info" title="View Details">

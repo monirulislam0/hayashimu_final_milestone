@@ -48,7 +48,7 @@ class CategoryController extends BaseController
         ]);
 
         // Debug: Check specifically for textarea fields
-       dd($request->all());
+    //    dd($request->all());
         
         $params = $request->except('_token');
 
