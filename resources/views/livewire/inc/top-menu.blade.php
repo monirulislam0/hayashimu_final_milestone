@@ -7,7 +7,7 @@
                 </a>
             </div>
             <div class="col-md-9 col-lg-8 header-nav">
-                <nav class="navbar navbar-expand-lg navbar-light h-100 w-100 p-0">
+                <!-- <nav class="navbar navbar-expand-lg navbar-light h-100 w-100 p-0">
                     <div class="collapse navbar-collapse d-lg-flex justify-content-md-center h-100 p-0" id="navbarNav">
                         <ul class="navbar-nav h-100">
                             <li class="nav-item main-nav">
@@ -92,6 +92,95 @@
                             </li>
                             <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.contact') }}">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav> -->
+                <nav class="navbar navbar-expand-lg navbar-light h-100 w-100 p-0">
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-md-center h-100 p-0" id="navbarNav">
+                        <ul class="navbar-nav h-100">
+                            <li class="nav-item main-nav">
+                                <a class="nav-link nav-link-names" style="color:#000000;" href="{{ route('frontend.home') }}">Home</a>
+                            </li>
+                            <li class="nav-item main-nav">
+                                <div class="d-flex justify-content-between h-md-100">
+                                     <a class="nav-link nav-link-names" style="color:#000000 !important; background-color:transparent !important; background:transparent !important;" onmouseover="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#22A1A7','important');" onmouseout="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#000000','important');" href="{{ route('frontend.products.all') }}">Products</a>
+                                 
+                                    <button class="btn btn-outline-none d-flex d-md-none "  style="background:transparent !important; color:#fff !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSub" aria-controls="navbarNavSub" aria-expanded="false" aria-label="Toggle navigation navbarNavSub">
+                                        <i class="fa-solid fa-caret-down fs-4 fa-caret-down-navbar" style="color: #fff; margin-top: -4px;"></i>
+                                    </button>
+                                </div>
+
+                                <div class="submenu navbar-nav " id="navbarNavSub">
+                                    <ul>
+                                        @foreach($product_categories as $product)
+                                        <li class="nav-item d-flex flex-column first-sub-item" id="first-sub-item">
+                                            <div class="d-flex justify-content-between">
+                                                <a class="nav-link" style="color:#000000 !important; background-color:transparent !important; background:transparent !important;" onmouseover="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#22A1A7','important');" onmouseout="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#000000','important');" href="{{ route('frontend.products',$product->slug) }}">{{ $product->name }}</a>
+                                                @if(count($product->children)>0)
+                                                 <button class="btn btn-outline-none d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSubChild3" aria-controls="navbarNavSubChild3" aria-expanded="false" aria-label="Toggle navigation navbarNavSubChild3" >
+                                                    <i class="fa-solid fa-caret-down fs-6 fa-caret-down-navbar" style="color: #fff;"></i>
+                                                </button>
+                                            </div>
+                                            
+                                            <div class="submenu-second navbar-nav" id="navbarNavSubChild3" style="background: #222;">
+                                                <ul>
+                                                    @foreach($product->children as $child)
+                                                    <li class="nav-item sec-nav-item"><a class="nav-link" style="color:#000000 !important; background-color:transparent !important; background:transparent !important;" onmouseover="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#22A1A7','important');" onmouseout="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#000000','important');" href="{{ route('frontend.products',$child->slug) }}">{{ $child->name }}</a></li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                            @endif
+                                        </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item main-nav">
+                                <div class="d-flex justify-content-between h-md-100">
+                                     <a class="nav-link nav-link-names" style="color:#000000 !important; background-color:transparent !important; background:transparent !important;" onmouseover="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#22A1A7','important');" onmouseout="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#000000','important');" href="{{ url('/page/about-us') }}">About Us</a>
+                                 
+                                    <button class="btn btn-outline-none d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAbout" aria-controls="navbarNavAbout" aria-expanded="false" aria-label="Toggle navigation navbarNavAbout">
+                                        <i class="fa-solid fa-caret-down fs-4 fa-caret-down-navbar" style="color: #fff; margin-top: -4px;"></i>
+                                    </button>
+                                </div>
+
+                                <div class="submenu navbar-nav" id="navbarNavAbout">
+                                    <ul>
+                                        <li class="nav-item">
+                                            <a class="nav-link" style="color:#000000 !important; background-color:transparent !important; background:transparent !important;" onmouseover="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#22A1A7','important');" onmouseout="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#000000','important');" href="{{ url('/page/about-us') }}">About Us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" style="color:#000000 !important; background-color:transparent !important; background:transparent !important;" onmouseover="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#22A1A7','important');" onmouseout="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#000000','important');" href="{{ url('/page/company-profile') }}">Company Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" style="color:#000000 !important; background-color:transparent !important; background:transparent !important;" onmouseover="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#22A1A7','important');" onmouseout="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#000000','important');" href="{{ url('/page/certification') }}">Certification</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item main-nav">
+                                <a class="nav-link nav-link-names" style="color:#000000;" href="{{ route('frontend.faq') }}">FAQ</a>
+                            </li>
+                            <li class="nav-item main-nav">
+                                 <div class="d-flex justify-content-between h-md-100">
+                                     <a class="nav-link nav-link-names" style="color:#000000 !important; background-color:transparent !important; background:transparent !important;" onmouseover="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#22A1A7','important');" onmouseout="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#000000','important');" href="{{ route('frontend.news.feed') }}">News</a>
+
+                                    <button class="btn btn-outline-none d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSub2" aria-controls="navbarNavSub2" aria-expanded="false" aria-label="Toggle navigation navbarNavSub2">
+                                        <i class="fa-solid fa-caret-down fs-4 fa-caret-down-navbar" style="color: #fff;"></i>
+                                    </button>
+                                </div>
+
+                                <div class="submenu navbar-nav" id="navbarNavSub2">
+                                    <ul>
+                                        <li class="nav-item">
+                                            <a class="nav-link" style="color:#000000 !important; background-color:transparent !important; background:transparent !important;" onmouseover="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#22A1A7','important');" onmouseout="this.style.setProperty('background-color','transparent','important'); this.style.setProperty('background','transparent','important'); this.style.setProperty('color','#000000','important');" href="{{ route('frontend.news.feed') }}">News Feed</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item main-nav">
+                                <a class="nav-link nav-link-names" style="color:#000000;" href="{{ route('frontend.contact') }}">Contact Us</a>
                             </li>
                         </ul>
                     </div>
