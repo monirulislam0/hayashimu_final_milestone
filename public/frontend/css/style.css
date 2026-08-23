@@ -60,14 +60,37 @@ body {
 }
 
 .nav-link {
-  color: #111827;
+  color: #000;
   text-transform: uppercase;
   padding: 0px 18px !important;
-  font-weight:600;
+  font-weight: 500;
+  background-color: transparent !important;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active,
+.nav-link.active {
   color: #22A1A7;
+  background-color: transparent !important;
+}
+
+/* Main menu links specifically - no background, only text color change */
+.main-nav > li > .nav-link,
+.main-nav > li > .nav-link:hover,
+.main-nav > li > .nav-link:focus,
+.main-nav > li > .nav-link:active,
+.main-nav > li > .nav-link.active {
+  background-color: transparent !important;
+}
+
+/* Ensure only main navigation links have no background */
+.main-nav > li > .nav-link,
+.main-nav > li > .nav-link:hover,
+.main-nav > li > .nav-link:focus,
+.main-nav > li > .nav-link:active,
+.main-nav > li > .nav-link.active {
+  background-color: transparent !important;
 }
 
 .submenu,
@@ -153,6 +176,19 @@ body {
   align-items: center;
 }
 
+/* Only target main menu items (direct children), not submenu items */
+.main-nav > li {
+  background-color: transparent !important;
+}
+
+.main-nav > li > .nav-link,
+.main-nav > li > .nav-link:hover,
+.main-nav > li > .nav-link:focus,
+.main-nav > li > .nav-link:active,
+.main-nav > li > .nav-link.active {
+  background-color: transparent !important;
+}
+
 .main-nav:hover .submenu {
   opacity: 1;
   visibility: visible;
@@ -173,6 +209,11 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: transparent !important;
+}
+
+.nav-link-names:hover {
+  background-color: transparent !important;
 }
 
 .first-sub-item:hover .submenu-second {
@@ -464,37 +505,25 @@ main {
   gap: 20px;
 }
 
-.view-btn {
-  background-color: #fff;
-  color: #000;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 
-.view-btn:hover {
-  background-color: #fff;
-  background: #fff !important;
-  color: #22A1A7;
-}
 
-.fix-btn {
-  border: 2px solid #ffff;
-  color: #fff;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 
-.fix-btn:hover {
-  border: 2px solid #ffff;
-  color: #fff;
-}
 
 .details-btn-ctrl {
   padding: 10px 60px !important;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
+}
+
+/* Force buttons in details-button to stay white on hover with no transparency */
+.details-button .btn,
+.details-button .btn:hover,
+.details-button .btn:focus,
+.details-button .btn:active {
+  background-color: #fff !important;
+  color: #000 !important;
+  opacity: 1 !important;
+  border-color: #fff !important;
 }
 
 .footer-ctrl {
@@ -682,7 +711,7 @@ main {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  display: none;
+  display: flex;
   cursor: pointer;
   color: #fff;
 }
@@ -970,7 +999,7 @@ video {
 
 @media only screen and (min-width: 768px) and (max-width: 1324px) {
   .nav-link {
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     padding: 0px 10px !important;
     font-size: 16px;
@@ -1022,7 +1051,7 @@ video {
   }
 
   .submenu .nav-link {
-    color: #fff;
+    color: #000;
   }
 
   .submenu ul {
@@ -1170,21 +1199,9 @@ video {
   }
 }
 
-.btn:hover {
-  background-color: transparent !important;
-}
 
-.view-btn {
-  border: 2px solid #fff;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
 
-.view-btn:hover {
-  border-color: #fff !important;
-  color: #fff;
-}
+
 
 .carousel-inner-multiple .carousel-item-end,
 .carousel-inner-multiple .carousel-item-start {
@@ -1462,20 +1479,51 @@ video {
 }
 
 i.fa-circle-play.fa-solid {
-  color: #c1a053 !important;
+  color: #2b9cd2 !important;
 }
 
 .view-btn:hover i.fa-circle-play.fa-solid {
-  color: #fff !important;
+  color: #2b9cd2 !important;
 }
 
 .fix-btn:hover {
   background-color: #fff !important;
-  color: #22A1A7;
+  color: #000;
 }
 
 .fix-btn:hover i.fa-brands.fa-facebook {
-  color: #c1a053 !important;
+  color: #22A1A7 !important;
+}
+
+/* Specific override for view-more buttons to stay white on hover */
+.details-button .btn {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: none !important;
+  opacity: 1 !important;
+}
+
+.details-button .btn:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: none !important;
+  opacity: 1 !important;
+}
+
+.details-button .btn i.fa-circle-play {
+  color: #2b9cd2 !important;
+}
+
+.details-button .btn i.fa-facebook {
+  color: #22A1A7 !important;
+}
+
+.details-button .btn:hover i.fa-circle-play {
+  color: #2b9cd2 !important;
+}
+
+.details-button .btn:hover i.fa-facebook {
+  color: #22A1A7 !important;
 }
 
 .imgLinkProducts:hover {
@@ -1544,4 +1592,13 @@ table {
 .discounted-price {
   color: #e44d26;
   text-decoration: line-through;
+}
+
+/* FINAL RULE: Force only main navigation list items to have no background color */
+.main-nav > li,
+.main-nav > li:hover,
+.main-nav > li:focus,
+.main-nav > li:active,
+.main-nav > li.active {
+  background-color: transparent !important;
 }

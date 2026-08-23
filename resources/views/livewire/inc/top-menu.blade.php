@@ -15,9 +15,9 @@
                             </li>
                             <li class="nav-item main-nav">
                                 <div class="d-flex justify-content-between h-md-100">
-                                     <a class="nav-link nav-link-names" href="{{ route('frontend.products.all') }}">Products</a>
+                                     <a class="nav-link nav-link-names" style="hover:background-color: transparent !important" href="{{ route('frontend.products.all') }}">Products</a>
                                  
-                                    <button class="btn btn-outline-none d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSub" aria-controls="navbarNavSub" aria-expanded="false" aria-label="Toggle navigation navbarNavSub">
+                                    <button class="btn btn-outline-none d-flex d-md-none "  style="background:transparent !important; color:#fff !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSub" aria-controls="navbarNavSub" aria-expanded="false" aria-label="Toggle navigation navbarNavSub">
                                         <i class="fa-solid fa-caret-down fs-4 fa-caret-down-navbar" style="color: #fff; margin-top: -4px;"></i>
                                     </button>
                                 </div>
@@ -76,12 +76,19 @@
                             <li class="nav-item main-nav">
                                  <div class="d-flex justify-content-between h-md-100">
                                      <a class="nav-link nav-link-names" href="{{ route('frontend.news.feed') }}">News</a>
-                                 
+
                                     <button class="btn btn-outline-none d-flex d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavSub2" aria-controls="navbarNavSub2" aria-expanded="false" aria-label="Toggle navigation navbarNavSub2">
                                         <i class="fa-solid fa-caret-down fs-4 fa-caret-down-navbar" style="color: #fff;"></i>
                                     </button>
                                 </div>
 
+                                <div class="submenu navbar-nav" id="navbarNavSub2">
+                                    <ul>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('frontend.news.feed') }}">News Feed</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="nav-item main-nav">
                                 <a class="nav-link nav-link-names" href="{{ route('frontend.contact') }}">Contact Us</a>
@@ -166,7 +173,8 @@
                 <div class="contact-info-overlay" style="margin-right: -3px;">{{ config('settings.mobile') }}</div>
             </li>
             <li class="custom-fs-container"  id="backToTopBtn">
-                <i class="fa-solid fa-forward-step custom-fs-icon"></i>
+            <i class="fa-solid fa-forward-step custom-fs-icon"></i> 
+                  <!--   <i class="fa-solid fa-angles-up"></i>-->
             </li>
         </ul>
     </div>

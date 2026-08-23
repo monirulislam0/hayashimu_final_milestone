@@ -42,6 +42,15 @@
         /* Buttons: hover color primary; if hover provides background, text becomes white */
         .btn:hover, .btn-primary:hover { background-color: var(--primary) !important; border-color: var(--primary) !important; color: #fff !important }
 
+        /* Main menu items: black text by default, teal on hover/active, no background change, semibold font */
+        .main-nav > li > .nav-link { color: #000 !important; background-color: transparent !important; font-weight: 500 !important; }
+        .main-nav > li > .nav-link:hover, .main-nav > li > .nav-link:focus, .main-nav > li > .nav-link:active, .main-nav > li > .nav-link.active { color: var(--primary) !important; background-color: transparent !important; }
+
+        /* Force main navigation list items to have no background color */
+        .main-nav > li, .main-nav > li:hover, .main-nav > li:focus, .main-nav > li:active, .main-nav > li.active {
+            background-color: transparent !important;
+        }
+
         /* Hero buttons share same look but minimal */
         .view-btn, .fix-btn { background-color: transparent; border: 2px solid var(--primary); color: var(--primary); padding: 10px 48px; border-radius: 6px }
         .view-btn:hover, .fix-btn:hover { background-color: var(--primary) !important; color: #fff !important }

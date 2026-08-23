@@ -56,6 +56,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Trigger the function on page load
   handleViewportChange();
+
+  // Prevent scroll-to-top on dropdown toggle buttons by storing scroll position
+  let dropdownToggles = document.querySelectorAll('[data-bs-toggle="collapse"]');
+  dropdownToggles.forEach(function(toggle) {
+    toggle.addEventListener("click", function(event) {
+      // Store current scroll position
+      let scrollY = window.scrollY || window.pageYOffset;
+      // Allow the collapse to work, then restore scroll position
+      setTimeout(function() {
+        window.scrollTo(0, scrollY);
+      }, 0);
+    });
+  });
+
   let firstSubItems = document.querySelectorAll(".first-sub-item");
 
   firstSubItems.forEach(function (item) {
@@ -83,9 +97,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let unsetWidth = document.getElementById("unset-width");
 
-  for (let i = 0; i < unsetWidth.children.length; i++) {
-    unsetWidth.children[i].removeAttribute("style");
+  if (unsetWidth) {
+    for (let i = 0; i < unsetWidth.children.length; i++) {
+      unsetWidth.children[i].removeAttribute("style");
+    }
   }
+
   let button = document.getElementById("backToTopBtn");
 
   window.onscroll = function () {
@@ -93,20 +110,21 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
+    // Always show the button regardless of scroll position
+    if (button) {
       button.style.display = "flex";
-    } else {
-      button.style.display = "none";
     }
   }
 
-  button.onclick = function () {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-  };
+  // Ensure button is visible on page load
+  if (button) {
+    button.style.display = "flex";
+
+    button.onclick = function () {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    };
+  }
 
   let items = document.querySelectorAll(".carousel-multiple .carousel-item");
 
