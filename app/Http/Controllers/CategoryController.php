@@ -96,13 +96,10 @@ class CategoryController extends BaseController
     }
 
     public function delete($id){
-//        $isParent = $this->categoryRepository->findCategoryById($id);
-//        $isParent = $isParent->parent_id;
-//        if($isParent!=1) {
-            $category = $this->categoryRepository->deleteCategory($id);
-//        }else{
-//            $category = false;
-//        }
+        if($id == 1) {
+            return $this->responseRedirectBack('Cannot delete root category (ID: 1)','error',true,true);
+        }
+        $category = $this->categoryRepository->deleteCategory($id);
         if(!$category){
             return $this->responseRedirectBack('Error occurred while deleting category','error',true,true);
         }
